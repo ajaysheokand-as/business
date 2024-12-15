@@ -63,8 +63,8 @@ function App() {
           </div>
         </section>
       </div>
-      <OurClients/>
-            <Project/>
+      <OurClients />
+      <Project />
     </>
   );
 }
