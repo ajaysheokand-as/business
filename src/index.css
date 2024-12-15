@@ -44,3 +44,8 @@ code {
       transform: translateY(0px);
   }
 }
+
+.swiper-pagination-horizontal{
+ position: relative !important;
+ top: 5px !important;
+}
