@@ -13,7 +13,6 @@ function Project() {
     }
   };
 
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -35,7 +34,7 @@ function Project() {
 
       <div className="text-center px-4 sm:px-8">
 
-        <h1 className="text-4xl sm:text-6xl font-bold">Projects</h1>
+        <h1 className="text-4xl sm:text-6xl font-bold mt-8">Projects</h1>
 
 
         <h3 className="w-full sm:w-[35%] text-lg sm:text-xl text-gray-400 mx-auto mt-6 sm:mt-12">
@@ -43,8 +42,8 @@ function Project() {
         </h3>
 
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 items-center justify-center rounded-full bg-sky-200 w-full sm:w-[36%] mx-auto mt-6 sm:mt-5">
-          <h3 className="pl-4 sm:pl-6 pt-1 text-gray-400 text-lg sm:text-xl">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 px-2 items-center justify-center rounded-full bg-green-200 w-full sm:w-[36%] mx-auto mt-6 sm:mt-5">
+          <h3 className="pl-4 sm:pl-6 pt-1 text-lg sm:text-xl">
             See more projects coming to the portfolio
           </h3>
           <button className="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded-full">Pipline</button>
@@ -59,7 +58,7 @@ function Project() {
 
         <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img6.webp"
+            src="/images/img6.webp"
             alt="Project 1"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -71,9 +70,9 @@ function Project() {
         </div>
 
 
-        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
+        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img7.png"
+            src="/images/img7.png"
             alt="Project 2"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -94,7 +93,7 @@ function Project() {
 
         <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img10.avif"
+            src="/images/img10.avif"
             alt="Project 1"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -108,7 +107,7 @@ function Project() {
 
         <div className="relative w-full sm:w-[38%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img9.png"
+            src="/images/img9.png"
             alt="Project 2"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -122,7 +121,7 @@ function Project() {
 
         <div className="relative w-full sm:w-[38%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img8.png"
+            src="/images/img8.png"
             alt="Project 3"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -142,7 +141,7 @@ function Project() {
 
         <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img11.png"
+            src="/images/img11.png"
             alt="Project 1"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -154,7 +153,7 @@ function Project() {
         </div>
         <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img12.png"
+            src="/images/img12.png"
             alt="Project 2"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -175,7 +174,7 @@ function Project() {
 
         <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img13.png"
+            src="/images/img13.png"
             alt="Project 1"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -189,7 +188,7 @@ function Project() {
 
         <div className="relative w-full sm:w-[55%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img14.png"
+            src="/images/img14.png"
             alt="Project 2"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
@@ -203,7 +202,7 @@ function Project() {
 
         <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
-            src="images/img15.png"
+            src="/images/img15.png"
             alt="Project 3"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />

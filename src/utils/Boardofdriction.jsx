@@ -13,7 +13,7 @@ function Boardofdriction() {
     ]
     return (
         <>
-            <h1 className='text-7xl ml-8 font-extrabold'>Board of directors</h1>
+            <h1 className=' md:text-7xl text-3xl m-8 font-extrabold '>Board of directors</h1>
             {/* Grid Layout for Images */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
                 {img.map((image, index) => (

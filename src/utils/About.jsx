@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 function About() {
   return (
     <>
+    <Navbar/>
       <div className="relative w-full h-[400px] sm:h-[300px] md:h-[500px]">
         <img src="images/img1.jpg" alt="A cat" className="w-screen h-full object-cover" />
         <div className="absolute inset-0 flex items-center  text-white bg-black bg-opacity-50">
@@ -36,7 +39,7 @@ function About() {
             Acknowledged <br />
             <span className="ml-0 sm:ml-0 md:ml-20">Distinction</span>
           </h2>
-          <img src="img3.png" alt="Acknowledged Distinction" className="    sm:w-full  h-[500px]" />
+          <img src="images/img3.png" alt="Acknowledged Distinction" className="    sm:w-full  h-[500px]" />
         </div>
 
         <div className="w-[750px]">
@@ -58,6 +61,7 @@ function About() {
           </h2>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
