@@ -1,3 +1,4 @@
+import Boardofdriction from "./utils/Boardofdriction";
 import Footer from "./utils/Footer";
 import Navbar from "./utils/Navbar";
 import OurClients from "./utils/Our-clients";
@@ -5,7 +6,7 @@ import Project from "./utils/Project";
 function App() {
   const statsData = [
     { title: 'Order book', value: '16,000+ Cr', icon: '💰' },
-    { title: 'Lane kms in India', value: '12,000+ Km', icon: '🛣️' },
+    { title: 'Lane kms in India', value: '12,000+ Km', icon: '🛣️'},
     { title: 'Employee family', value: '2,000+', icon: '👨‍👩‍👧‍👦' },
     { title: 'Fleet size', value: '2,000+', icon: '🚚' },
   ];
@@ -19,7 +20,7 @@ function App() {
           <button className="bg-green-700 hover:bg-green-600 text-white py-2 px-6 rounded-full text-lg">Know more</button>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0">
-          <img src="/images/1.png" alt="Illustration of construction vehicles working on a road" className="w-full h-fit shape" />
+          <img src="images/file.png" alt="Illustration of construction vehicles working on a road" className="w-full h-fit shape" />
         </div>
       </div>
       <section className="md:h-[530px] overflow-hidden">
@@ -27,6 +28,7 @@ function App() {
           src='/video/Sequence-01_1.mp4'
           width='100%'
           autoPlay
+          loop
           muted
           playsInline
           className="h-fit"
@@ -47,13 +49,13 @@ function App() {
               <p className="text-xl">25+</p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 md:mt-0 md:w-[50%]">
+          <div className="grid justify-center grid-cols-1 md:grid-cols-2 gap-4 mt-4 md:mt-0 md:w-[50%]">
             {statsData.map((stat, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md p-4 flex items-center justify-between hover:bg-gray-200 cursor-pointer  "
+                className="bg-white flex justify-center border-red-900  w-full align-center rounded-lg shadow-md border-2 hover:bg-gray-200 cursor-pointer  "
               >
-                <div className="flex items-center flex-col">
+                <div className="flex items-center gap-2  md:mt-10 h-fit flex-col">
                   <span className="text-2xl mr-2">{stat.icon}</span>
                   <span className="text-lg text-muted-foreground">{stat.value}</span>
                   <span className="font-semibold text-lg">{stat.title}</span>
@@ -65,6 +67,8 @@ function App() {
       </div>
       <OurClients />
       <Project />
+      <Boardofdriction/>
+      <Footer/>
     </>
   );
 }
