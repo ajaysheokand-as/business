@@ -8,16 +8,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
+import { clients } from '../data/Main';
 export default function OurClients() {
-    const clients = [
-                { image: "images/Frame-1.png", },
-                { image: "images/Frame-3.png", },
-                { image: "images/Frame-4.png", },
-                { image: "images/Frame-5.png", },
-                { image: "images/Frame-6.png", },
-                { image: "images/Frame-7.png", },
-            ];
+    
     return (
         <section className=" bg-gray-100 px-1 md:py-16 overflow-hidden">
                          <h1 className=" font-bold text-[40px] px-3 text-center">Our Clients</h1>
