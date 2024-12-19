@@ -1,8 +1,8 @@
-import Boardofdriction from "./utils/Boardofdriction";
+// import Boardofdriction from "./utils/Boardofdriction";
 import Footer from "./utils/Footer";
 import Navbar from "./utils/Navbar";
 import OurClients from "./utils/Our-clients";
-import Project from "./utils/Project";
+// import Project from "./utils/Project";
 function App() {
   const statsData = [
     { title: 'Order book', value: '16,000+ Cr', icon: '💰' },
@@ -66,8 +66,8 @@ function App() {
         </section>
       </div>
       <OurClients />
-      <Project />
-      <Boardofdriction/>
+      {/* <Project /> */}
+      {/* <Boardofdriction/> */}
       <Footer/>
     </>
   );

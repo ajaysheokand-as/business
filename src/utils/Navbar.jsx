@@ -22,16 +22,16 @@ function Navbar() {
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <Link to={"/"} className={`font-semibold ${location.pathname == '/' ?'text-red-500': 'text-gray-500' }`} >
+              <Link to={"/"} className={`font-semibold ${location.pathname === '/' ?'text-red-500': 'text-gray-500' }`} >
                 Home
               </Link>
-              <Link to={"/about"} className={`font-semibold ${location.pathname == '/about' ?'text-red-500': 'text-gray-500' }`}>
+              <Link to={"/about"} className={`font-semibold ${location.pathname ==='/about' ?'text-red-500': 'text-gray-500' }`}>
                 About Us
               </Link>
-              <Link to={"/project"} className={`font-semibold ${location.pathname == '/project' ?'text-red-500': 'text-gray-500' }`}>
+              <Link to={"/project"} className={`font-semibold ${location.pathname === '/project' ?'text-red-500': 'text-gray-500' }`}>
                 Projects
               </Link>
-              <Link to={"/BoardOfDirectors"} className={`font-semibold ${location.pathname == '/BoardOfDirectors' ?'text-red-500': 'text-gray-500' }`}>
+              <Link to={"/BoardOfDirectors"} className={`font-semibold ${location.pathname === '/BoardOfDirectors' ?'text-red-500': 'text-gray-500' }`}>
                 Board of Directors
               </Link>
               <Link to={'/contactUs'} className="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded-full">
@@ -51,16 +51,16 @@ function Navbar() {
         {isOpen && (
           <div className="md:hidden slide-down">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link to={"/"} className={`block font-semibold ${location.pathname == '/' ?'text-red-500': 'text-gray-500' }`} >
+              <Link to={"/"} className={`block font-semibold ${location.pathname === '/' ?'text-red-500': 'text-gray-500' }`} >
                 Home
               </Link>
-              <Link to={"/about"} className={`block font-semibold ${location.pathname == '/about' ?'text-red-500': 'text-gray-500' }`}>
+              <Link to={"/about"} className={`block font-semibold ${location.pathname === '/about' ?'text-red-500': 'text-gray-500' }`}>
                 About Us
               </Link>
-              <Link to={"/project"} className={`block font-semibold ${location.pathname == '/project' ?'text-red-500': 'text-gray-500' }`}>
+              <Link to={"/project"} className={`block font-semibold ${location.pathname ==='/project' ?'text-red-500': 'text-gray-500' }`}>
                 Projects
               </Link>
-              <Link to={"/BoardOfDirectors"} className={`block font-semibold ${location.pathname == '/BoardOfDirectors' ?'text-red-500': 'text-gray-500' }`}>
+              <Link to={"/BoardOfDirectors"} className={`block font-semibold ${location.pathname === '/BoardOfDirectors' ?'text-red-500': 'text-gray-500' }`}>
                 Board of Directors
               </Link>
               <Link to={'/contactUs'} className="w-full bg-green-700 hover:bg-green-600 text-white px-4 py-2 mt-2 rounded-full">

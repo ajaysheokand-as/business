@@ -51,7 +51,7 @@ export default function OurClients() {
             {clients.map((client, index) => (
                 <SwiperSlide key={index}>
                     <div className="flex items-center ">
-                        <img src={client.image} alt="Client Image" className="w=[132px] h-[132px] mr-4" />
+                        <img src={client.image} alt="" className="w=[132px] h-[132px] mr-4" />
                     </div>
                 </SwiperSlide>
             ))}
