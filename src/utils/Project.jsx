@@ -43,6 +43,8 @@ function Project() {
 
       {/* 1 */}
 
+      {/* firstpara */}
+
       <div className=" ml-10 mt-7 mr-10 flex flex-col sm:flex-row sm:justify-between gap-6">
         <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
