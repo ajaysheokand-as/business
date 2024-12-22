@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { aboutData } from "../data/Main";
+import { aboutData } from "../data/Main";import Scrolldown from './Scrolldown'
+
 function About() {
   const {sectionFirst,sectionSecond , sectionFourth , sectionThird }= aboutData
   return (
