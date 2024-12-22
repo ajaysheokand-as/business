@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Scrolldown from './Scrolldown'
 
 function About() {
   return (
@@ -86,6 +87,7 @@ function About() {
     </h2>
   </div>
 </div>
+<Scrolldown/>
 
       <Footer/>
 
