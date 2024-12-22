@@ -13,7 +13,7 @@ export default function OurClients() {
     
     return (
         <section className=" bg-gray-100 px-1 md:py-16 overflow-hidden">
-                         <h1 className=" font-bold text-[40px] px-3 text-center">Our Clients</h1>
+                         <h1 className=" font-black text-4xl md:text-7xl px-3 ">Our Clients</h1>
                          <div className=" my-8 p-4">
         <Swiper
             // install Swiper modules
@@ -43,8 +43,8 @@ export default function OurClients() {
         >
             {clients.map((client, index) => (
                 <SwiperSlide key={index}>
-                    <div className="flex items-center ">
-                        <img src={client.image} alt="" className="w=[132px] h-[132px] mr-4" />
+                    <div className="">
+                        <img src={client.image} alt="" className="w=[132px] h-[132px] ml-10 md:ml-0" />
                     </div>
                 </SwiperSlide>
             ))}
