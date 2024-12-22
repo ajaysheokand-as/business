@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element : <About/>
   },
   {
-    path : 'project',
+    path : '/project',
     element : <ProjectSection/>  
   },
   {
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     element :<BoardOfDirectors/>
   },
   {
-    path : 'contactUs',
+    path : '/contactUs',
     element : <ContactUs/>
   }
 ]);

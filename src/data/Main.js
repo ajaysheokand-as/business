@@ -1,53 +1,97 @@
+export const navbar = {
+  logo: "https://placehold.co/50x50",
+  text: "GAWAR",
+  smText: "Construction Limited",
+  navLink: [
+    { text: "Home", path: "/" },
+    { text: "About", path: "/about" },
+    { text: "Project", path: "/project" },
+    { text: "Board of Directors", path: "/BoardOfDirectors" },
+  ],
+};
+
+// main section
 
 export const mainSection = {
-    hading : "Building the infra for tomorrow",
-    paragraph : "Premier player in expressways, bridges & tunnels across India",
-    image : "images/file.png",
-    video : '/video/Sequence-01_1.mp4'
-}
-export const overResult ={
-    MainHading :"Our results in numbers",
-    image : '/images/road-4.jpeg',
-    hading : "HAM Projects",
-    val : "25+",
-    statsData :  [
-        { title: 'Order book', value: '16,000+ Cr', icon: '💰' },
-        { title: 'Lane kms in India', value: '12,000+ Km', icon: '🛣️'},
-        { title: 'Employee family', value: '2,000+', icon: '👨‍👩‍👧‍👦' },
-        { title: 'Fleet size', value: '2,000+', icon: '🚚' },
-      ]
-}     
+  hading: "Building the infra for tomorrow",
+  paragraph: "Premier player in expressways, bridges & tunnels across India",
+  image: "images/file.png",
+  video: "/video/Sequence-01_1.mp4",
+  btnText :'Know more'
+};
+export const overResult = {
+  MainHading: "Our results in numbers",
+  image: "/images/road-4.jpeg",
+  hading: "HAM Projects",
+  val: "25+",
+  statsData: [
+    { title: "Order book", value: "16,000+ Cr", icon: "💰" },
+    { title: "Lane kms in India", value: "12,000+ Km", icon: "🛣️" },
+    { title: "Employee family", value: "2,000+", icon: "👨‍👩‍👧‍👦" },
+    { title: "Fleet size", value: "2,000+", icon: "🚚" },
+  ],
+};
 
-/* clients component data*/ 
+/* clients component data*/
 export const clients = [
-    { image: "images/Frame-1.png", },
-    { image: "images/Frame-3.png", },
-    { image: "images/Frame-4.png", },
-    { image: "images/Frame-5.png", },
-    { image: "images/Frame-6.png", },
-    { image: "images/Frame-7.png", },
+  { image: "images/Frame-1.png" },
+  { image: "images/Frame-3.png" },
+  { image: "images/Frame-4.png" },
+  { image: "images/Frame-5.png" },
+  { image: "images/Frame-6.png" },
+  { image: "images/Frame-7.png" },
 ];
 
-// project component Data 
-export const projectsDetails ={
-    paragraph : `Explore our portfolio showcasing the successful execution of projects
+// project component Data
+export const projectsDetails = {
+  paragraph: `Explore our portfolio showcasing the successful execution of projects
           that have left a lasting impact on communities and infrastructure
           development.`,
-    moreProject : "See more projects coming to the portfolio"  ,
-    btn : 'Pipeline'    
-}
+  moreProject: "See more projects coming to the portfolio",
+  btn: "Pipeline",
+};
 export const projects = {
-    firstOne : {image : "/images/img6.webp" , text :"Urban Extension Road Highway Pvt Ltd"},
-    firstTwo : {image : "/images/img7.png" , text :"Gawar Bangalore Highway Pvt Ltd"},
-    SecondOne : {image : "/images/img10.avif" , text :" Hardiya Hasanpur Highway Pvt Ltd"},
-    SecondTwo : {image : "/images/img9.png" , text :"Gawar Kiratpur Nerchowk Highway Pvt Ltd"},
-    SecondThree : {image : "/images/img8.png" , text :"Dewas Ujjain Highway Pvt Ltd"},
-    thirdOne : {image : "/images/img11.png" , text :"Gawar Rohna Jhajjar Highway Pvt Ltd"},
-    thirdTwo : {image : "/images/img12.png" , text :"Gawar Rohna sonipat Highway Pvt Ltd"},
-    fourthOne : {image : "/images/img13.png" , text :" Hardiya Hasanpur Highway Pvt Ltd"},
-    fourthTwo : {image : "/images/img14.png" , text :"  Gawar Kiratpur Nerchowk Highway Pvt Ltd"},
-    fourthThree : {image : "/images/img15.png" , text :"  Dewas Ujjain Highway Pvt Ltd"},
-}
+  firstOne: {
+    image: "/images/img6.webp",
+    text: "Urban Extension Road Highway Pvt Ltd",
+  },
+  firstTwo: {
+    image: "/images/img7.png",
+    text: "Gawar Bangalore Highway Pvt Ltd",
+  },
+  SecondOne: {
+    image: "/images/img10.avif",
+    text: " Hardiya Hasanpur Highway Pvt Ltd",
+  },
+  SecondTwo: {
+    image: "/images/img9.png",
+    text: "Gawar Kiratpur Nerchowk Highway Pvt Ltd",
+  },
+  SecondThree: {
+    image: "/images/img8.png",
+    text: "Dewas Ujjain Highway Pvt Ltd",
+  },
+  thirdOne: {
+    image: "/images/img11.png",
+    text: "Gawar Rohna Jhajjar Highway Pvt Ltd",
+  },
+  thirdTwo: {
+    image: "/images/img12.png",
+    text: "Gawar Rohna sonipat Highway Pvt Ltd",
+  },
+  fourthOne: {
+    image: "/images/img13.png",
+    text: " Hardiya Hasanpur Highway Pvt Ltd",
+  },
+  fourthTwo: {
+    image: "/images/img14.png",
+    text: "  Gawar Kiratpur Nerchowk Highway Pvt Ltd",
+  },
+  fourthThree: {
+    image: "/images/img15.png",
+    text: "  Dewas Ujjain Highway Pvt Ltd",
+  },
+};
 
 export const BoardOfDirectors =[
     { src: 'images/phoolvati.jpg', text: 'Smt. Phoolwati',subtext:"Non-Executive Director", alt: ' She is 81 years old and Non-Executive Director of the Company. She is a social worker and advocates for the marginalized sections of society and animal welfare.' },
