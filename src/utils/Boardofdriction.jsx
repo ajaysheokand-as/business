@@ -1,6 +1,10 @@
-import React from 'react'
 import {hading , services} from '../data/Main'
+
+import React from 'react';
+import { BoardOfDirectors2 } from '../data/Main';
 function Boardofdriction() {
+
+     
     return (
         <>
             <h1 className='md:text-7xl text-3xl m-8 font-extrabold'>{hading}</h1>
