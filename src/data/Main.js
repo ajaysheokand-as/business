@@ -1,12 +1,12 @@
 export const navbar = {
-  logo: "https://placehold.co/50x50",
+  logo: "/images/JFST-logo11.png",
   text: "GAWAR",
   smText: "Construction Limited",
   navLink: [
     { text: "Home", path: "/" },
     { text: "About", path: "/about" },
     { text: "Project", path: "/project" },
-    { text: "Board of Directors", path: "/BoardOfDirectors" },
+    { text: "Services", path: "/BoardOfDirectors" },
   ],
 };
 
@@ -14,7 +14,7 @@ export const navbar = {
 
 export const mainSection = {
   hading: "Building the infra for tomorrow",
-  paragraph: "Premier player in expressways, bridges & tunnels across India",
+  paragraph: "Your safety and compliance are our top priorities.",
   image: "images/file.png",
   video: "/video/Sequence-01_1.mp4",
   btnText :'Know more'
@@ -49,27 +49,29 @@ export const projectsDetails = {
           development.`,
   moreProject: "See more projects coming to the portfolio",
   btn: "Pipeline",
+  hading :'Projects'
 };
+
 export const projects = {
   firstOne: {
     image: "/images/img6.webp",
-    text: "Urban Extension Road Highway Pvt Ltd",
+    text: "Iisc Banglore",
   },
   firstTwo: {
     image: "/images/img7.png",
-    text: "Gawar Bangalore Highway Pvt Ltd",
+    text: "Iit Jamu",
   },
   SecondOne: {
     image: "/images/img10.avif",
-    text: " Hardiya Hasanpur Highway Pvt Ltd",
+    text: "Bhel",
   },
   SecondTwo: {
     image: "/images/img9.png",
-    text: "Gawar Kiratpur Nerchowk Highway Pvt Ltd",
+    text: "Gail",
   },
   SecondThree: {
     image: "/images/img8.png",
-    text: "Dewas Ujjain Highway Pvt Ltd",
+    text: "Iisc chitardurga",
   },
   thirdOne: {
     image: "/images/img11.png",
@@ -93,40 +95,72 @@ export const projects = {
   },
 };
 
-export const BoardOfDirectors = [
+// Services page contant
+export const hading = "Services"
+export const services = [
   {
-    src: "images/phoolvati.jpg",
-    text: "Project 1",
-    alt: " She is 81 years old and Non-Executive Director of the Company. She is a social worker and advocates for the marginalized sections of society and animal welfare.",
+    src: "/images/output1.jpg",
+    text: "Smoke detector installation and supply  [Morley honeywell simens bosch]",
+    alt : "Our expert team specializes in seamless installation, ensuring optimal placement and functionality to detect potential fire hazards promptly. Whether for commercial, residential, or industrial spaces, our solutions are tailored to meet the highest safety standards and regulatory requirements."
   },
   {
-    src: "images/rakesh.jpg",
-    text: "Project 2",
-    alt: " Mr. Rakesh Kumar, as Founder and Executive Director, has propelled Gawar to new heights with innovative ideas and a strong grasp of technology. His experience of over 25 years in civil construction and attention to detail, deep knowledge, and openness to innovation have boosted functional efficiencies, making Gawar among the top national infrastructure companies in India. He emphasises trust, transparency, and problem-solving, transforming Gawar into a process-driven and system-oriented organisation",
+    src: "/images/output2.jpg",
+    text: "Fire hydrant supply and Installation and supply",
+    alt : "Our experienced team ensures precise installation, adhering to all safety regulations and standards to guarantee reliable performance during emergencies. From underground piping to above-ground hydrant placement, we manage the entire process with professionalism and efficiency."
   },
   {
-    src: "images/ramkishan.png",
-    text: "Project 3",
-    alt: " Mr. Ravinder Kumar, Founder and Executive Director, holds a Bachelor’s degree in Humanities and brings over 25 years of experience in civil construction. He plays a vital role in strategic planning, technical aspects, and project execution, setting new standards for Gawar by consistently completing projects ahead of schedule. His expertise lies in resource management and maximising productivity, driving early project completion and securing early completion bonuses",
+    src: "/images/output3.jpg",
+    text: "Safty synazes",
+    alt : "Enhance safety and compliance in your building with our high-quality safety signage solutions. We provide a wide range of essential safety signs, including 'Exit,' 'Fire Extinguisher,' 'Emergency Exit,' 'No Smoking,' 'First Aid,' and 'Caution: Wet Floor' signs, tailored to meet your specific needs."
   },
   {
-    src: "images/ravinder.png",
-    text: "Project 4",
+    src: "/images/output1.jpg",
+    text: "Radium poster A2size,A3 size",
     alt: " Mr. Singla, Executive Director-Technical at Gawar since October 2019, holds a Ph.D. in Civil Engineering from Manav Rachna International Institute of Research and Studies. With 38 years of experience in public and private sectors, including roles at NHAI and Haryana State Roads and Bridges Development Corporation, he has been involved in record-breaking projects. He has authored technical publications featured in NASA and Harvard libraries, published the book “Expressways in 500 Days,” and received accolades like The Expressway Man of the Year (2019), Lifetime Achievement Award (2019), and Desh Ratna Conclave Award (2021). Recently, he was honoured with the Lifetime Achievement Award (Infrastructure) in 2023",
   },
   {
-    src: "images/img5.webp",
-    text: "Project 5",
-    alt: " Mr. Ram Kishan, Whole time Director – Project, joined the Company’s Board in 2017. He holds a B.A. from S.M.R.J. Government College, Siwani, and brings over 15 years of experience in road project execution. His expertise lies in consistently completing projects well ahead of schedule, directly contributing to the Company’s profitability",
+    src: "images/Licensing-and-Certification.avif",
+    text: "Exit route plan",
+    alt: " Mr. Ram Kishan, Whole time Director -Project, joined the Company’s Board in 2017. He holds a B.A. from S.M.R.J. Government College, Siwani, and brings over 15 years of experience in road project execution. His expertise lies in consistently completing projects well ahead of schedule, directly contributing to the Company’s profitability",
   },
   {
-    src: "images/img6.webp",
-    text: "Project 6",
-    alt: "Mr. Bhupinder Singh, a retired IAS officer with a distinguished career spanning over several decades, joined the Haryana Civil Services (HCS) in 1992 and was inducted into the Indian Administrative Service (IAS) in 2005. Throughout his tenure, he held key positions in the Haryana government, including City Magistrate of Hisar, Sub Divisional Magistrate in various districts, and Joint Secretary in multiple departments such as Home, Vigilance, Personnel, and Finance. With extensive experience in managing financial matters and overseeing the allocation of funds for developmental projects, Mr. Singh brings invaluable expertise and mentorship to our team",
+    src: "/images/output4.jpg",
+    text: "Fire extinguisher supply and Installation, refilling",
+    alt : "In addition to supply and installation, we offer reliable fire extinguisher refilling services to keep your equipment in top working condition. Using advanced refilling techniques and certified materials, we guarantee the performance and longevity of your extinguishers."
+  },
+  {
+    src: "images/output5.jpg",
+    text: "Gas suppression system installation and supply",
+    alt : "Protect your property with our advanced gas suppression system solutions, designed for optimal fire safety in critical environments. We supply and install cutting-edge clean agent gas suppression systems that are highly effective in extinguishing fires without causing damage to sensitive equipment or the environment."
+  },
+  {
+    src: "images/output6.webp",
+    text: "Electrical pannel supply and Installation of fire hydrant",
+    alt : "Ensure seamless operation of your fire hydrant system with our specialized electrical panel supply and installation services. We provide high-quality electrical control panels designed specifically to integrate with fire hydrant systems, ensuring reliable and efficient performance during emergencies"
   },
   {
     src: "images/img7.png",
-    text: "Project 7",
+    text: "Fire exit door",
+    alt: " Ms. Sumedha Kataria, a retired IAS officer from the 2005 Batch of the Haryana Cadre, served as the Chief Administrator at HSAMB, Panchkula, and held various senior-level positions in the Haryana government. She has received accolades such as the Bharat Vikas Award for development work in Kurukshetra and the Dr. Praloy O. Basu Lifetime Achievement Award. Her educational background includes an MBA from G.J.U. Hisar, MA degrees from Punjab University and Kurukshetra University, and an MA in Community Education from De Montfort University, Leicester (U.K.)",
+  },
+  {
+    src: "images/img7.png",
+    text: "AMC of fire extinguisher",
+    alt: " Ms. Sumedha Kataria, a retired IAS officer from the 2005 Batch of the Haryana Cadre, served as the Chief Administrator at HSAMB, Panchkula, and held various senior-level positions in the Haryana government. She has received accolades such as the Bharat Vikas Award for development work in Kurukshetra and the Dr. Praloy O. Basu Lifetime Achievement Award. Her educational background includes an MBA from G.J.U. Hisar, MA degrees from Punjab University and Kurukshetra University, and an MA in Community Education from De Montfort University, Leicester (U.K.)",
+  },
+  {
+    src: "images/img7.png",
+    text: "AMC OF FIRE HYDRANT SYSTEM",
+    alt: " Ms. Sumedha Kataria, a retired IAS officer from the 2005 Batch of the Haryana Cadre, served as the Chief Administrator at HSAMB, Panchkula, and held various senior-level positions in the Haryana government. She has received accolades such as the Bharat Vikas Award for development work in Kurukshetra and the Dr. Praloy O. Basu Lifetime Achievement Award. Her educational background includes an MBA from G.J.U. Hisar, MA degrees from Punjab University and Kurukshetra University, and an MA in Community Education from De Montfort University, Leicester (U.K.)",
+  },
+  {
+    src: "images/img7.png",
+    text: "AMC OF FIRE ALARM PANNEL",
+    alt: " Ms. Sumedha Kataria, a retired IAS officer from the 2005 Batch of the Haryana Cadre, served as the Chief Administrator at HSAMB, Panchkula, and held various senior-level positions in the Haryana government. She has received accolades such as the Bharat Vikas Award for development work in Kurukshetra and the Dr. Praloy O. Basu Lifetime Achievement Award. Her educational background includes an MBA from G.J.U. Hisar, MA degrees from Punjab University and Kurukshetra University, and an MA in Community Education from De Montfort University, Leicester (U.K.)",
+  },
+  {
+    src: "images/img7.png",
+    text: "AMC OF ALL ELECTRICAL PANNEL",
     alt: " Ms. Sumedha Kataria, a retired IAS officer from the 2005 Batch of the Haryana Cadre, served as the Chief Administrator at HSAMB, Panchkula, and held various senior-level positions in the Haryana government. She has received accolades such as the Bharat Vikas Award for development work in Kurukshetra and the Dr. Praloy O. Basu Lifetime Achievement Award. Her educational background includes an MBA from G.J.U. Hisar, MA degrees from Punjab University and Kurukshetra University, and an MA in Community Education from De Montfort University, Leicester (U.K.)",
   },
 ];
@@ -138,22 +172,22 @@ export const ContactUsData = {
   address: [
     {
       text: "Email Us",
-      address: "abc@gmail.com",
+      address: "Jfstpvtltd2000@gmail.com",
       icon: "fas fa-envelope",
     },
     {
       text: "Call Us",
-      address: 123456789,
+      address: 7204469532,
       icon: "fas fa-phone",
     },
-    {
-      text: "Registered office",
-      address: "DSS-378 Sector 16-17  Hisar HR 125005",
-      icon: "fas fa-map-marker-alt",
-    },
+    // {
+    //   text: "Registered office",
+    //   address: "DSS-378 Sector 16-17  Hisar HR 125005",
+    //   icon: "fas fa-map-marker-alt",
+    // },
     {
       text: "Corporate office",
-      address: "DSS-378 Sector 16-17 Hisar HR 125005",
+      address: "House no. 09, Cqal layout, Yelhanka Newtown, 560064, Banglore",
       icon: "fas fa-map-marker-alt",
     },
   ],

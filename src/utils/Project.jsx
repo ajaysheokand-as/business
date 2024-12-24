@@ -26,13 +26,13 @@ function Project() {
   return (
     <>
       <div className="text-center px-4 sm:px-8">
-        <h1 className="text-4xl sm:text-6xl font-bold mt-8 tracking-wider">PROJECTS</h1>
+        <h1 className="text-4xl sm:text-6xl font-bold mt-8 tracking-wider">{projectsDetails.hading}</h1>
         <h3 className="w-full sm:w-[35%] text-lg sm:text-xl text-gray-400 mx-auto mt-6 sm:mt-12">
          {projectsDetails.paragraph}
         </h3>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 px-2 items-center justify-center rounded-full bg-green-200 w-full sm:w-[36%] mx-auto mt-6 sm:mt-5">
-          <h3 className="pl-4 sm:pl-6 pt-1 text-lg sm:text-xl">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 px-2 items-center justify-center rounded-full bg-green-200 w-full sm:w-[36%] mx-auto mt-6 py-3 sm:mt-5">
+          <h3 className=" px-3 py-1 text-lg sm:text-xl">
             {projectsDetails.moreProject}
           </h3>
           <button className="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded-full">
@@ -51,7 +51,7 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold p-4">
               {projects.firstOne.text}
             </h2>
           </div>
@@ -64,7 +64,7 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold p-4">
             {projects.firstTwo.text}
             </h2>
           </div>
@@ -81,7 +81,7 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl pl-6 sm:text-2xl font-bold">
+            <h2 className="text-xl pl-6 sm:text-2xl font-bold p-4 ">
             {projects.SecondOne.text}
             </h2>
           </div>
@@ -94,7 +94,7 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold p-4">
             {projects.SecondTwo.text}
             </h2>
           </div>
@@ -107,7 +107,7 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold p-4">
               {projects.SecondThree.text}
             </h2>
           </div>
@@ -115,7 +115,7 @@ function Project() {
       </div>
       {/* 3 */}
 
-      <div className=" ml-10 mr-10 mt-5 flex flex-col sm:flex-row sm:justify-between gap-6">
+      {/* <div className=" ml-10 mr-10 mt-5 flex flex-col sm:flex-row sm:justify-between gap-6">
         <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.thirdOne.image}
@@ -123,7 +123,7 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold p-4">
             {projects.thirdOne.text}
             </h2>
           </div>
@@ -135,15 +135,15 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold p-4">
             {projects.thirdTwo.text}
             </h2>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* 4 */}
 
-      <div className=" mt-6 ml-10  mr-10 flex flex-col sm:flex-row sm:justify-between gap-4 ">
+      {/* <div className=" mt-6 ml-10  mr-10 flex flex-col sm:flex-row sm:justify-between gap-4 ">
         <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.fourthOne.image}
@@ -151,7 +151,7 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl pl-6 sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold p-4">
             {projects.fourthOne.text}
             </h2>
           </div>
@@ -164,7 +164,7 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold p-4">
             {projects.fourthTwo.text}
             </h2>
           </div>
@@ -177,12 +177,12 @@ function Project() {
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl pl-6 sm:text-2xl font-bold">
+            <h2 className="text-xl p-4 sm:text-2xl font-bold">
             {projects.fourthThree.text}
             </h2>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {showButton && (
         <button

@@ -9,14 +9,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col md:flex-row items-center justify-between  md:pl-4">
+      <div className="flex flex-col md:flex-row items-center justify-between px-4">
         <div className="text-center md:text-left md:w-1/2 gap-4 flex flex-col p-4 md:p-0 ">
           <h1 className=" md:text-8xl text-4xl font-bold leading-tight mb-4">
             {mainSection.hading}
           </h1>
-          <p className="text-lg md:text-xl mb-6 text-gray-700">
+          <div className="text-lg md:text-xl mb-6 text-gray-700">
             <TypewriterEffect text={mainSection.paragraph}/>
-          </p>
+          </div>
           <button className="bg-green-700 hover:bg-green-600 text-white py-2 px-6 rounded-full md:w-1/3 text-lg">
            {mainSection.btnText}
           </button>
@@ -64,7 +64,7 @@ function App() {
                 className="bg-white flex justify-left pl-8 py-5 md:py-0 border-red-900  w-full align-center rounded-lg shadow-md border-2 hover:bg-gray-200 cursor-pointer  "
               >
                 <div className="flex items-left gap-2 md:mt-10 h-fit flex-col">
-                  <span className="text-2xl mr-2">{stat.icon}</span>
+                  <span className="text-4xl mr-2">{stat.icon}</span>
                   <span className="text-3xl font-black text-gray-500">
                     {stat.value}
                   </span>
@@ -77,8 +77,8 @@ function App() {
           </div>
         </section>
       </div>
-      <section className=" mt-5 overflow-hidden">
-        <img src="/images/full-img.jpg" />
+      <section className="mt-5 overflow-hidden">
+        <img src="/images/full-img.jpg"alt="hello"className="w-full" />
       </section>
       <OurClients />
       <Project />

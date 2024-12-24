@@ -34,6 +34,7 @@ function Footer() {
           <nav className="flex flex-wrap justify-start gap-5 mb-4">
             {navbar.navLink.map((nav) => (
               <Link
+                key={Math.random()}
                 to={nav.path}
                 className={`font-semibold hover:text-orange-500 transition-colors  ${
                   location.pathname === nav.path

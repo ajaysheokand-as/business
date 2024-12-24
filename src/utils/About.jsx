@@ -49,11 +49,13 @@ function About() {
                     <h1 className=" text-3xl md:text-6xl font-bold text-center my-16">{sectionThird.title}</h1>
                     <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
                         <img src={sectionThird.imgFirst} alt="A scenic view of a highway surrounded by greenery and hills" className="rounded-lg shadow-lg w-full md:w-1/2" />
-                        <img src={sectionThird.imgSecond} alt="A modern highway with multiple lanes and buildings in the background" className="rounded-lg shadow-lg w-full md:w-1/2" />
+                        <div>
+                        <img src={sectionThird.imgSecond} alt="A modern highway with multiple lanes and buildings in the background" className="rounded-lg shadow-lg w-full" />
+                       <p className="text-lg text-gray-700 mt-8 text-center md:text-left max-w-2xl">
+                        {sectionThird.hading}
+                       </p>
+                        </div>
                     </div>
-                    <p className="text-lg text-gray-700 mt-8 text-center md:text-left max-w-2xl">
-                      {sectionThird.hading}
-                    </p>
                 </div>
       {/* 4 */}
 
@@ -64,7 +66,7 @@ function About() {
           className="w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
+        <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 px-4">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-12 sm:mt-16 md:mt-12 ml-4 sm:ml-8 md:ml-1">
             <h1 className="text-3xl sm:text-5xl my-3 font-semibold">
               {sectionFourth.title}
