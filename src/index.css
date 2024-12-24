@@ -80,3 +80,18 @@ input::-webkit-inner-spin-button {
 .color{
   background: #b3b3b3;
 }
+
+@media screen and (min-width: 1440px) {
+  .root{
+    position: absolute;
+    left: 23%;
+    transform: translateX(-20%);
+  }
+}
+@media screen and (min-width: 1740px) {
+  .root{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

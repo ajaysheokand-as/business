@@ -6,20 +6,20 @@ function Navbar() {
   const location = useLocation();
   return (
     <>
-      <nav className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
+      <nav className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between">
+            <div className="">
               <img
                 src={navbar.logo}
                 alt="Company Logo"
-                className="h-10 w-10 mr-2"
+                className="h-[90px] mr-2"
               />
-              <div>
+              {/* <div>
                 <h1 className="text-xl font-bold">{navbar.text}</h1>
                 <p className="text-sm"> {navbar.smText}</p>
-              </div>
+              </div> */}
             </div>
+          {/* <div className="flex items-center justify-between h-16"> */}
             <div className="hidden md:flex items-center space-x-16">
               {
                 navbar.navLink.map(nav =>
@@ -41,7 +41,7 @@ function Navbar() {
               </button>
             </div>
           </div>
-        </div>
+        {/* </div> */}
         {isOpen && (
           <div className="md:hidden slide-down">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -57,7 +57,7 @@ function Navbar() {
                   {nav.text}
                 </Link>
               ))}
-              <Link to={'/contactUs'} className="w-full bg-green-700 hover:bg-green-600 text-white px-4 py-2 mt-2 rounded-full">
+              <Link to={'/contactUs'} className="w-full bg-green-700 hover:bg-green-600 text-white px-4 py-2 mt-5 rounded-full block text-center">
                 Let's talk
               </Link>
             </div>

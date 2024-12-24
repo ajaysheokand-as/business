@@ -12,8 +12,8 @@ import { clients } from '../data/Main';
 export default function OurClients() {
     
     return (
-        <section className=" bg-gray-100 px-1 md:py-16 overflow-hidden">
-                         <h1 className=" font-black text-4xl md:text-7xl px-3 ">Our Clients</h1>
+        <section className=" bg-gray-100 px-1 md:py-16 overflow-hidden container">
+                         <h1 className=" font-black text-4xl md:text-7xl px-3 my-5">Our Clients</h1>
                          <div className=" my-8 p-4">
         <Swiper
             // install Swiper modules

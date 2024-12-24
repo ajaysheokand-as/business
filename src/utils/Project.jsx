@@ -43,7 +43,7 @@ function Project() {
 
       {/* 1 */}
 
-      <div className=" ml-10 mt-7 mr-10 flex flex-col sm:flex-row sm:justify-between gap-6">
+      {/* <div className=" ml-10 mt-7 mr-10 flex flex-col sm:flex-row sm:justify-between gap-6">
         <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.firstOne.image}
@@ -69,11 +69,11 @@ function Project() {
             </h2>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* 2 */}
 
-      <div className=" mt-6 ml-10  mr-10 flex flex-col sm:flex-row sm:justify-between gap-4 ">
+      {/* <div className=" mt-6 ml-10  mr-10 flex flex-col sm:flex-row sm:justify-between gap-4 ">
         <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.SecondOne.image}
@@ -112,30 +112,30 @@ function Project() {
             </h2>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* 3 */}
 
       <div className=" ml-10 mr-10 mt-5 flex flex-col sm:flex-row sm:justify-between gap-6">
-        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
+        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.thirdOne.image}
             alt="Project 1"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold px-4">
             {projects.thirdOne.text}
             </h2>
           </div>
         </div>
-        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
+        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.thirdTwo.image}
             alt="Project 2"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold px-4">
             {projects.thirdTwo.text}
             </h2>
           </div>
@@ -143,8 +143,8 @@ function Project() {
       </div>
       {/* 4 */}
 
-      <div className=" mt-6 ml-10  mr-10 flex flex-col sm:flex-row sm:justify-between gap-4 ">
-        <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
+      <div className=" my-8 ml-10  mr-10 flex flex-col sm:flex-row sm:justify-center gap-4 ">
+        {/* <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.fourthOne.image}
             alt="Project 1"
@@ -155,22 +155,22 @@ function Project() {
             {projects.fourthOne.text}
             </h2>
           </div>
-        </div>
+        </div> */}
 
-        <div className="relative w-full sm:w-[55%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
+        <div className="relative w-full sm:w-[55%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.fourthTwo.image}
             alt="Project 2"
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-xl sm:text-2xl font-bold px-4">
             {projects.fourthTwo.text}
             </h2>
           </div>
         </div>
 
-        <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
+        {/* <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">
           <img
             src={projects.fourthThree.image}
             alt="Project 3"
@@ -181,7 +181,7 @@ function Project() {
             {projects.fourthThree.text}
             </h2>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {showButton && (

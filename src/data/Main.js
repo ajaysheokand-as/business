@@ -1,7 +1,7 @@
 export const navbar = {
-  logo: "https://placehold.co/50x50",
-  text: "GAWAR",
-  smText: "Construction Limited",
+  logo: "/images/file (2).png",
+  // text: "GAWAR",
+  // smText: "Construction Limited",
   navLink: [
     { text: "Home", path: "/" },
     { text: "About", path: "/about" },
@@ -53,15 +53,15 @@ export const projectsDetails = {
 export const projects = {
   firstOne: {
     image: "/images/img6.webp",
-    text: "Urban Extension Road Highway Pvt Ltd",
+    text: "Dulte - Kwalkulh Road (International Corridor) of NH-6",
   },
   firstTwo: {
     image: "/images/img7.png",
-    text: "Gawar Bangalore Highway Pvt Ltd",
+    text: "Bikaner Suratgarh National Highway-15",
   },
   SecondOne: {
     image: "/images/img10.avif",
-    text: " Hardiya Hasanpur Highway Pvt Ltd",
+    text: "Four lane Badarpur Bypass National Highway-6",
   },
   SecondTwo: {
     image: "/images/img9.png",
@@ -73,11 +73,11 @@ export const projects = {
   },
   thirdOne: {
     image: "/images/img11.png",
-    text: "Gawar Rohna Jhajjar Highway Pvt Ltd",
+    text: "Bikaner Suratgarh National Highway-15",
   },
   thirdTwo: {
     image: "/images/img12.png",
-    text: "Gawar Rohna sonipat Highway Pvt Ltd",
+    text: "Four lane Badarpur Bypass National Highway-6",
   },
   fourthOne: {
     image: "/images/img13.png",
@@ -85,7 +85,7 @@ export const projects = {
   },
   fourthTwo: {
     image: "/images/img14.png",
-    text: "  Gawar Kiratpur Nerchowk Highway Pvt Ltd",
+    text: "Dulte - Kwalkulh Road (International Corridor) of NH-6",
   },
   fourthThree: {
     image: "/images/img15.png",
@@ -138,23 +138,23 @@ export const ContactUsData = {
   address: [
     {
       text: "Email Us",
-      address: "abc@gmail.com",
+      address: "kmrbuildcon40@gmail.com",
       icon: "fas fa-envelope",
     },
     {
       text: "Call Us",
-      address: 123456789,
+      address:"9813538000 , 8930829000",
       icon: "fas fa-phone",
     },
     {
       text: "Registered office",
-      address: "DSS-378 Sector 16-17  Hisar HR 125005",
+      address: "Shop no. 102, New Auto Market, Phase-3, Near Gate no. 3, Hisar-125001, Haryana",
       icon: "fas fa-map-marker-alt",
     },
     {
-      text: "Corporate office",
-      address: "DSS-378 Sector 16-17 Hisar HR 125005",
-      icon: "fas fa-map-marker-alt",
+      text: "Corporate Identification Number",
+      address: "CIN - U45309HR2022PTC100609",
+      icon: "fa-solid fa-passport",
     },
   ],
   image: "/images/file.png",
@@ -171,25 +171,20 @@ export const aboutData = {
   sectionSecond: {
     img:"images/img2.png",
     hading: "Embarking on, a Journey",
-    title: `Gawar Construction Limited (GCL), established in 1997 as a
-            partnership firm and re-constituted as a limited company in 2008.
-            Specialising in infrastructure projects like Expressways, Highways,
-            Tunnels, and Bridges, we collaborate with prestigious government
-            bodies across India, contributing over 12,000 lane kilometres to
-            India’s infrastructure.`,
+    title: `Kmr Buildcon Private Limited is a Private company incorporated on 18 January 2022. It is classified as Non-government company and is registered at Registrar of Companies, Delhi. Its authorized share capital is Rs. 10,000,000 and its paid up capital is Rs. 900,670.`,
   },
   sectionThird: {
     imgFirst:"images/img3.png",
     imgSecond:"images/img4.png",
     title: "Acknowledged Distinction",
-    hading: "Our industry standing is affirmed by our “AA/Stable” rating from CRISIL, highlighting our financial strength and track record of swift project execution. Additionally, our subsidiaries, comprising seven HAM companies, hold a “AAA/Stable” rating from CRISIL/ICRA, showcasing our dedication to excellence.",
+    hading: "It's NIC code is 453 (which is part of its CIN). As per the NIC code, it is inolved in Building installation [ These activities are usually performed at the site of construction, although parts of the job may be carried out in a special shop. Repair of installations are also included in the corresponding sub-classes.].",
   },
   sectionFourth: {
     img:"images/img5.webp",
     title: "Pioneering Excellence",
     hading: `
-            Gawar Construction is renowned for its commitment to steadfast
-            project execution, evident in 12 projects receiving early completion
+            KMR Construction is renowned for its commitment to steadfast
+            project execution, evident in 4 projects receiving early completion
             bonus over the past five years, and a strong order book reflects the
             trust
             our clients place in us.`

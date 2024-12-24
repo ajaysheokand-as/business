@@ -45,15 +45,17 @@ function About() {
       </div>
     
       {/* 3 */}
-       <div className="flex flex-col items-center justify-center min-h-screen p-4">
+      <div className="flex flex-col items-center justify-center min-h-screen p-4">
                     <h1 className=" text-3xl md:text-6xl font-bold text-center my-16">{sectionThird.title}</h1>
                     <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
                         <img src={sectionThird.imgFirst} alt="A scenic view of a highway surrounded by greenery and hills" className="rounded-lg shadow-lg w-full md:w-1/2" />
-                        <img src={sectionThird.imgSecond} alt="A modern highway with multiple lanes and buildings in the background" className="rounded-lg shadow-lg w-full md:w-1/2" />
+                        <div>
+                        <img src={sectionThird.imgSecond} alt="A modern highway with multiple lanes and buildings in the background" className="rounded-lg shadow-lg w-full" />
+                       <p className="text-lg text-gray-700 mt-8 text-center md:text-left max-w-2xl">
+                        {sectionThird.hading}
+                       </p>
+                        </div>
                     </div>
-                    <p className="text-lg text-gray-700 mt-8 text-center md:text-left max-w-2xl">
-                      {sectionThird.hading}
-                    </p>
                 </div>
       {/* 4 */}
 
