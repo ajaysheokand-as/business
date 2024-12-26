@@ -4,7 +4,7 @@ import { Link , useLocation } from "react-router-dom";
 function Footer() {
    const location  =  useLocation()
   return (
-    <div className="flex flex-col  px-4 bg-gray-200">
+    <div className="flex flex-col px-10 bg-gray-200">
       <header className="w-full flex flex-col md:flex-row  md:justify-between justify-start items-center py-4">
         <div className="flex items-center space-x-2 mb-4 md:mb-0">
           <i className="fas fa-shield-alt text-black"></i>
