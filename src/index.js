@@ -7,6 +7,7 @@ import About from "./utils/About.jsx";
 import BoardOfDirectors from "./utils/BoardOfDrictionSection.jsx";
 import ProjectSection from "./utils/ProjectSection.jsx";
 import ContactUs from "./utils/ContactUs.jsx";
+import ProjectDetails from "./utils/project/ProjectDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path : '/contactUs',
     element : <ContactUs/>
+  },
+  {
+    path : '/abc',
+    element : <ProjectDetails/>
   }
 ]);
 

@@ -191,4 +191,10 @@ export const aboutData = {
   },
 };
 
-
+ export const footerData = {
+   company : 'KMR Corp.',
+   subscribe  : 'Subscribe To Our Newsletter :',
+   paragraph : "Improving people's futures through building infrastructure",
+   footer : 'KMR | Copyright @ 2022 | All Rights reserved',
+   icon :['fas fa-globe' ,'fab fa-linkedin' , "fab fa-instagram" , "fab fa-facebook"]
+}

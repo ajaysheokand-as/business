@@ -1,5 +1,5 @@
 import React from "react";
-import { navbar } from "../data/Main";
+import { footerData, navbar } from "../data/Main";
 import { Link , useLocation } from "react-router-dom";
 function Footer() {
    const location  =  useLocation()
@@ -8,10 +8,10 @@ function Footer() {
       <header className="w-full flex flex-col md:flex-row  md:justify-between justify-start items-center py-4">
         <div className="flex items-center space-x-2 mb-4 md:mb-0">
           <i className="fas fa-shield-alt text-black"></i>
-          <span className="text-black font-bold">Wiyasa Corp</span>
+          <span className="text-black font-bold">{footerData.company}</span>
         </div>
         <div className="flex items-center flex-wrap space-x-2">
-          <span className="text-black ml-2">Subscribe To Our Newsletter:</span>
+          <span className="text-black ml-2">{footerData.subscribe}</span>
           <div>
             <input
               type="email"
@@ -24,9 +24,7 @@ function Footer() {
       </header>
       <main className="flex flex-col text-left mt-16">
         <h1 className="text-3xl md:text-6xl font-bold leading-tight text-gray-900">
-          Improving people’s futures through
-          <br />
-          building infrastructure
+          {footerData.paragraph}
         </h1>
       </main>
       <footer className="w-full mt-16">
@@ -46,22 +44,11 @@ function Footer() {
             ))}
           </nav>
           <div className="flex space-x-4 mb-4">
-            <a href="#" className="text-black">
-              <i className="fas fa-globe"></i>
-            </a>
-            <a href="#" className="text-black">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="#" className="text-black">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="text-black">
-              <i className="fab fa-facebook"></i>
-            </a>
+          {footerData.icon.map(val => <Link to={'#'}><i className={`${val} text-black`}></i></Link>)}
           </div>
         </div>
         <div className="text-black text-sm text-center mb-5">
-          Wiyasa | Copyright @ 2022 | All Rights reserved
+         {footerData.footer}
         </div>
       </footer>
     </div>
