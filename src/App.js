@@ -5,6 +5,7 @@ import OurClients from "./utils/Our-clients";
 import Project from "./utils/Project";
 import { mainSection, overResult } from "./data/Main";
 import TypewriterEffect from "./utils/TypeWriterEffect";
+import Carousel from "./utils/Carousel";
 function App() {
   return (
     <>
@@ -29,7 +30,7 @@ function App() {
           />
         </div>
       </div>
-      <section className="md:h-[530px] overflow-hidden">
+      {/* <section className="md:h-[530px] overflow-hidden">
         <video
           src={mainSection.video}
           width="100%"
@@ -39,8 +40,8 @@ function App() {
           playsInline
           className="h-fit"
         />
-      </section>
-
+      </section> */}
+      <Carousel/>
       <div className="p-4">
         <h1 className="text-center font-bold md:text-7xl text-xl md:m-10 m-3 ">
           {overResult.MainHading}
