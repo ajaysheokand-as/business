@@ -1,15 +1,15 @@
-import React ,{useState} from "react";
+import React, { useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { ContactUsData } from "../data/Main";
-import emailjs from 'emailjs-com'
+import emailjs from "emailjs-com";
 function ContactUs() {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    number :'',
+    number: "",
     email: "",
     message: "",
   });
@@ -18,19 +18,20 @@ function ContactUs() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  const handleSubmit = (e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const serviceID = "your_service_id";// Replace with your EmailJS service ID
-    const templateID = "your_template_id";// Replace with your EmailJS template ID
-    const publicKey = "your_public_key";// Replace with your EmailJS public key
-    emailjs.send(serviceID, templateID, formData, publicKey)
-    .then(
+    const serviceID = "your_service_id"; // Replace with your EmailJS service ID
+    const templateID = "your_template_id"; // Replace with your EmailJS template ID
+    const publicKey = "your_public_key"; // Replace with your EmailJS public key
+    emailjs.send(serviceID, templateID, formData, publicKey).then(
       (response) => {
-        setSuccessMessage("Thank you for reaching out. We'll get back to you soon!");
+        setSuccessMessage(
+          "Thank you for reaching out. We'll get back to you soon!"
+        );
         setFormData({
           firstName: "",
           lastName: "",
-          number :'',
+          number: "",
           email: "",
           message: "",
         }); // Reset form
@@ -39,7 +40,7 @@ function ContactUs() {
         setErrorMessage("Failed to send message. Please try again.");
       }
     );
-  }
+  };
   return (
     <>
       <Navbar />
@@ -63,7 +64,10 @@ function ContactUs() {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-4xl">
           {ContactUsData.address.map((val) => (
-            <div key={Math.random()} className="bg-white p-6 rounded-lg shadow-md flex items-center justify-between">
+            <div
+              key={Math.random()}
+              className="bg-white p-6 rounded-lg shadow-md flex items-center justify-between"
+            >
               <div>
                 <h2 className="text-lg font-semibold text-gray-900">
                   {val.text}
@@ -96,7 +100,7 @@ function ContactUs() {
                 <input
                   type="text"
                   required
-                  name= 'firstName'
+                  name="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="Full name here"
@@ -105,11 +109,11 @@ function ContactUs() {
               </div>
               <div>
                 <label className="block text-gray-700 font-medium mb-1">
-                  Last name 
+                  Last name
                 </label>
                 <input
                   type="text"
-                  name= 'lastName'
+                  name="lastName"
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last Name Here"
@@ -162,7 +166,7 @@ function ContactUs() {
             <div>
               <button
                 type="submit"
-                className="w-full bg-green-700 hover:bg-green-600  text-white font-medium py-2 rounded-md"
+                className="w-full bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white font-medium py-2 rounded-md"
               >
                 Get a call back
               </button>

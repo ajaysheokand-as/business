@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {projects , projectsDetails} from "../data/Main"
+import { projects, projectsDetails } from "../data/Main";
 function Project() {
   const [showButton, setShowButton] = useState(false);
   const handleScroll = () => {
@@ -26,16 +26,18 @@ function Project() {
   return (
     <>
       <div className="text-center px-4 sm:px-8">
-        <h1 className="text-4xl sm:text-6xl font-bold mt-8 tracking-wider">PROJECTS</h1>
-        <h3 className="w-full sm:w-[35%] text-lg sm:text-xl text-gray-400 mx-auto mt-6 sm:mt-12">
-         {projectsDetails.paragraph}
+        <h1 className="text-4xl sm:text-6xl font-bold mt-8 tracking-wider">
+          PROJECTS
+        </h1>
+        <h3 className="w-full sm:w-[35%] text-sm sm:text-xl text-gray-400 mx-auto mt-6 sm:mt-12">
+          {projectsDetails.paragraph}
         </h3>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 px-2 items-center justify-center rounded-full bg-green-200 w-full sm:w-[36%] mx-auto mt-6 sm:mt-5">
-          <h3 className="pl-4 sm:pl-6 pt-1 text-lg sm:text-xl">
+        <div className="flex flex-col p-4 sm:flex-row gap-4 sm:gap-5 px-2 items-center justify-center rounded-lg bg-cyan-100 w-full sm:w-[36%] mx-auto mt-6 sm:mt-5">
+          <h3 className="pl-4 sm:pl-6 pt-1 line-clamp-1 text-lg sm:text-base font-semibold">
             {projectsDetails.moreProject}
           </h3>
-          <button className="bg-green-700 hover:bg-green-600 text-white px-4 py-2 rounded-full">
+          <button className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white px-4 py-2 rounded-lg">
             {projectsDetails.btn}
           </button>
         </div>
@@ -124,7 +126,7 @@ function Project() {
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
             <h2 className="text-xl sm:text-2xl font-bold px-4">
-            {projects.thirdOne.text}
+              {projects.thirdOne.text}
             </h2>
           </div>
         </div>
@@ -136,7 +138,7 @@ function Project() {
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
             <h2 className="text-xl sm:text-2xl font-bold px-4">
-            {projects.thirdTwo.text}
+              {projects.thirdTwo.text}
             </h2>
           </div>
         </div>
@@ -165,7 +167,7 @@ function Project() {
           />
           <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
             <h2 className="text-xl sm:text-2xl font-bold px-4">
-            {projects.fourthTwo.text}
+              {projects.fourthTwo.text}
             </h2>
           </div>
         </div>
@@ -187,7 +189,7 @@ function Project() {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-10 right-10 bg-green-800 text-white text-2xl p-4 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
+          className="fixed bottom-10 right-10 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white text-2xl p-4 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
         >
           ↑
         </button>

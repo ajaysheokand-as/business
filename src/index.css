@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 * {
   font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", serif;
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 
   /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -22,41 +23,38 @@
 
 @keyframes slideDown {
   from {
-      opacity: 0;
-      transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .slide-down {
   animation: slideDown 0.3s ease-out;
 }
 
-
-.shape{
-  animation: up 2s linear alternate infinite ;
+.shape {
+  animation: up 2s linear alternate infinite;
 }
 @keyframes up {
-
   0% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
-  
+
   100% {
-      transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
-.swiper-pagination-horizontal{
- position: relative !important;
- top: 5px !important;
+.swiper-pagination-horizontal {
+  position: relative !important;
+  top: 5px !important;
 }
-
 
 html::-webkit-scrollbar {
-  width: 5px; 
+  width: 5px;
 }
 
 html::-webkit-scrollbar-track {
@@ -77,19 +75,19 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.color{
+.color {
   background: #b3b3b3;
 }
 
 @media screen and (min-width: 1440px) {
-  .root{
+  .root {
     position: absolute;
     left: 23%;
     transform: translateX(-20%);
   }
 }
 @media screen and (min-width: 1740px) {
-  .root{
+  .root {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

@@ -13,14 +13,15 @@ export const navbar = {
 // main section
 
 export const mainSection = {
-  hading: "Building the infra for tomorrow",
-  paragraph: "Premier player in expressways, bridges & tunnels across India",
-  image: "images/file.png",
+  hading: "Shaping the Future with Tomorrow's Infrastructure",
+  paragraph:
+    "A leading force in the development of expressways, bridges, and tunnels across India.",
+  image: "images/main1.jpg",
   video: "/video/Sequence-01_1.mp4",
-  btnText :'Know more'
+  btnText: "Know more",
 };
 export const overResult = {
-  MainHading: "Our results in numbers",
+  MainHading: "Our achievements, measured in numbers.",
   image: "/images/road-4.jpeg",
   hading: "HAM Projects",
   val: "25+",
@@ -95,39 +96,24 @@ export const projects = {
 
 export const BoardOfDirectors = [
   {
-    src: "images/phoolvati.jpg",
-    text: "Project 1",
-    alt: " She is 81 years old and Non-Executive Director of the Company. She is a social worker and advocates for the marginalized sections of society and animal welfare.",
+    src: "images/CEO.jpg",
+    text: `Alexandra Alex Morgan  CEO & Founder`,
+    alt: "Alexandra Morgan is a visionary leader and the CEO of Morgan & Co. Construction. With over 20 years of experience in the industry, she founded the company with a commitment to transforming the way buildings are designed and built. Her keen eye for innovation, coupled with her deep understanding of structural integrity, has propelled the company into new markets. Under Alex’s leadership, Morgan & Co. has consistently delivered high-quality projects, from residential complexes to large-scale commercial properties. Her passion for sustainable construction practices and her dedication to community-building make her a respected figure in the industry.",
   },
   {
-    src: "images/rakesh.jpg",
-    text: "Project 2",
-    alt: " Mr. Rakesh Kumar, as Founder and Executive Director, has propelled Gawar to new heights with innovative ideas and a strong grasp of technology. His experience of over 25 years in civil construction and attention to detail, deep knowledge, and openness to innovation have boosted functional efficiencies, making Gawar among the top national infrastructure companies in India. He emphasises trust, transparency, and problem-solving, transforming Gawar into a process-driven and system-oriented organisation",
+    src: "images/2nd.jpg",
+    text: `David Tran – Chief Operations Officer (COO)`,
+    alt: "David Tran is the Chief Operations Officer at Tran Construction Group and has been with the company for over 15 years. Known for his exceptional leadership skills and hands-on approach, David oversees the day-to-day operations of the company. He ensures that every project is executed on time, within budget, and up to the highest standards. David’s background in engineering and logistics has allowed him to implement cutting-edge technologies to streamline construction processes. His ability to manage large teams and multiple projects simultaneously has earned him a reputation as a strategic and effective leader.",
   },
   {
-    src: "images/ramkishan.png",
-    text: "Project 3",
-    alt: " Mr. Ravinder Kumar, Founder and Executive Director, holds a Bachelor’s degree in Humanities and brings over 25 years of experience in civil construction. He plays a vital role in strategic planning, technical aspects, and project execution, setting new standards for Gawar by consistently completing projects ahead of schedule. His expertise lies in resource management and maximising productivity, driving early project completion and securing early completion bonuses",
+    src: "images/3rd.jpg",
+    text: ` Sophie Lopez – Director of Project Development`,
+    alt: " Sophie Lopez is the Director of Project Development at Lopez Builders. With a background in architecture and urban planning, Sophie brings a creative and detail-oriented approach to every project. She specializes in large-scale residential developments and commercial spaces that combine functionality with aesthetic appeal. Sophie’s commitment to delivering projects that meet both client expectations and environmental standards has helped position Lopez Builders as a leader in sustainable construction practices. Her innovative mindset and hands-on experience have contributed to the company’s rapid growth and success in competitive markets.",
   },
   {
-    src: "images/ravinder.png",
-    text: "Project 4",
-    alt: " Mr. Singla, Executive Director-Technical at Gawar since October 2019, holds a Ph.D. in Civil Engineering from Manav Rachna International Institute of Research and Studies. With 38 years of experience in public and private sectors, including roles at NHAI and Haryana State Roads and Bridges Development Corporation, he has been involved in record-breaking projects. He has authored technical publications featured in NASA and Harvard libraries, published the book “Expressways in 500 Days,” and received accolades like The Expressway Man of the Year (2019), Lifetime Achievement Award (2019), and Desh Ratna Conclave Award (2021). Recently, he was honoured with the Lifetime Achievement Award (Infrastructure) in 2023",
-  },
-  {
-    src: "images/img5.webp",
-    text: "Project 5",
-    alt: " Mr. Ram Kishan, Whole time Director – Project, joined the Company’s Board in 2017. He holds a B.A. from S.M.R.J. Government College, Siwani, and brings over 15 years of experience in road project execution. His expertise lies in consistently completing projects well ahead of schedule, directly contributing to the Company’s profitability",
-  },
-  {
-    src: "images/img6.webp",
-    text: "Project 6",
-    alt: "Mr. Bhupinder Singh, a retired IAS officer with a distinguished career spanning over several decades, joined the Haryana Civil Services (HCS) in 1992 and was inducted into the Indian Administrative Service (IAS) in 2005. Throughout his tenure, he held key positions in the Haryana government, including City Magistrate of Hisar, Sub Divisional Magistrate in various districts, and Joint Secretary in multiple departments such as Home, Vigilance, Personnel, and Finance. With extensive experience in managing financial matters and overseeing the allocation of funds for developmental projects, Mr. Singh brings invaluable expertise and mentorship to our team",
-  },
-  {
-    src: "images/img7.png",
-    text: "Project 7",
-    alt: " Ms. Sumedha Kataria, a retired IAS officer from the 2005 Batch of the Haryana Cadre, served as the Chief Administrator at HSAMB, Panchkula, and held various senior-level positions in the Haryana government. She has received accolades such as the Bharat Vikas Award for development work in Kurukshetra and the Dr. Praloy O. Basu Lifetime Achievement Award. Her educational background includes an MBA from G.J.U. Hisar, MA degrees from Punjab University and Kurukshetra University, and an MA in Community Education from De Montfort University, Leicester (U.K.)",
+    src: "images/4th.jpg",
+    text: `James "Jim" Carter – Chief Financial Officer (CFO)`,
+    alt: "James Carter is the Chief Financial Officer at Carter & Sons Construction, where he has been an integral part of the leadership team for over a decade. With a background in corporate finance and construction management, Jim ensures the financial health and sustainability of the company. He oversees budgeting, forecasting, and financial strategy to support the company’s growth and long-term goals. Jim’s ability to analyze market trends, manage risks, and optimize resource allocation has been crucial in maintaining profitability while expanding the company’s reach. His no-nonsense approach to financial planning and his ability to navigate the complexities of the construction industry make him a key player in the company's success.",
   },
 ];
 
@@ -143,12 +129,13 @@ export const ContactUsData = {
     },
     {
       text: "Call Us",
-      address:"9813538000 , 8930829000",
+      address: "9813538000 , 8930829000",
       icon: "fas fa-phone",
     },
     {
       text: "Registered office",
-      address: "Shop no. 102, New Auto Market, Phase-3, Near Gate no. 3, Hisar-125001, Haryana",
+      address:
+        "Shop no. 102, New Auto Market, Phase-3, Near Gate no. 3, Hisar-125001, Haryana",
       icon: "fas fa-map-marker-alt",
     },
     {
@@ -164,37 +151,43 @@ export const ContactUsData = {
 
 export const aboutData = {
   sectionFirst: {
-    img:"images/imgg.jpg",
+    img: "images/imgg.jpg",
     title: "About Us",
     hading: "Shaping the Future: Leaders in Infrastructure Development",
   },
   sectionSecond: {
-    img:"images/img2.png",
+    img: "images/img2.png",
     hading: "Embarking on, a Journey",
     title: `Kmr Buildcon Private Limited is a Private company incorporated on 18 January 2022. It is classified as Non-government company and is registered at Registrar of Companies, Delhi. Its authorized share capital is Rs. 10,000,000 and its paid up capital is Rs. 900,670.`,
   },
   sectionThird: {
-    imgFirst:"images/img3.png",
-    imgSecond:"images/img4.png",
+    imgFirst: "images/img3.png",
+    imgSecond: "images/img4.png",
     title: "Acknowledged Distinction",
-    hading: "It's NIC code is 453 (which is part of its CIN). As per the NIC code, it is inolved in Building installation [ These activities are usually performed at the site of construction, although parts of the job may be carried out in a special shop. Repair of installations are also included in the corresponding sub-classes.].",
+    hading:
+      "It's NIC code is 453 (which is part of its CIN). As per the NIC code, it is inolved in Building installation [ These activities are usually performed at the site of construction, although parts of the job may be carried out in a special shop. Repair of installations are also included in the corresponding sub-classes.].",
   },
   sectionFourth: {
-    img:"images/img5.webp",
+    img: "images/img5.webp",
     title: "Pioneering Excellence",
     hading: `
             KMR Construction is renowned for its commitment to steadfast
             project execution, evident in 4 projects receiving early completion
             bonus over the past five years, and a strong order book reflects the
             trust
-            our clients place in us.`
+            our clients place in us.`,
   },
 };
 
- export const footerData = {
-   company : 'KMR Corp.',
-   subscribe  : 'Subscribe To Our Newsletter :',
-   paragraph : "Improving people's futures through building infrastructure",
-   footer : 'KMR | Copyright @ 2022 | All Rights reserved',
-   icon :['fas fa-globe' ,'fab fa-linkedin' , "fab fa-instagram" , "fab fa-facebook"]
-}
+export const footerData = {
+  company: "KMR Corp.",
+  subscribe: "Subscribe To Our Newsletter :",
+  paragraph: "Improving people's futures through building infrastructure",
+  footer: "KMR | Copyright @ 2022 | All Rights reserved",
+  icon: [
+    "fas fa-globe",
+    "fab fa-linkedin",
+    "fab fa-instagram",
+    "fab fa-facebook",
+  ],
+};

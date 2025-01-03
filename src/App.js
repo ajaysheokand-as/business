@@ -10,23 +10,23 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col md:flex-row items-center justify-between  md:pl-4">
+      <div className="flex flex-col md:flex-row items-center justify-between  md:pl-4 lg:my-12">
         <div className="text-center md:text-left md:w-1/2 gap-4 flex flex-col p-4 md:p-0 ">
-          <h1 className=" md:text-8xl text-4xl font-bold leading-tight mb-4">
+          <h1 className=" md:text-6xl text-4xl font-bold leading-tight mb-4">
             {mainSection.hading}
           </h1>
-          <p className="text-lg md:text-xl mb-6 text-gray-700">
-            <TypewriterEffect text={mainSection.paragraph}/>
+          <p className="text-sm md:text-xl mb-6 text-gray-700">
+            <TypewriterEffect text={mainSection.paragraph} />
           </p>
-          <button className="bg-green-700 hover:bg-green-600 text-white py-2 px-6 rounded-full md:w-1/3 text-lg">
-           {mainSection.btnText}
+          <button className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white py-2 px-6 rounded-md md:w-1/3 text-lg">
+            {mainSection.btnText}
           </button>
         </div>
-        <div className="md:w-1/2 mt-8 md:mt-0">
+        <div className="md:w-1/2 mt-8 md:mt-0 md:p-8">
           <img
             src={mainSection.image}
             alt="Illustration of construction vehicles working on a road"
-            className="w-full h-fit shape"
+            className={`w-full h-fit rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]`}
           />
         </div>
       </div>
@@ -41,7 +41,7 @@ function App() {
           className="h-fit"
         />
       </section> */}
-      <Carousel/>
+      <Carousel />
       <div className="p-4">
         <h1 className="text-center font-bold md:text-7xl text-xl md:m-10 m-3 ">
           {overResult.MainHading}
