@@ -1,16 +1,14 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Boardofdriction from './Boardofdriction'
-import Footer from './Footer'
+import React from "react";
+import Navbar from "./Navbar";
+import Boardofdriction from "./Boardofdriction";
 
 function BoardOfDirectors() {
   return (
     <div>
-      <Navbar/>
-      <Boardofdriction/>
-      <Footer/>
+      <Navbar />
+      <Boardofdriction />
     </div>
-  )
+  );
 }
 
-export default BoardOfDirectors
+export default BoardOfDirectors;

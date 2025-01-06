@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { aboutData } from "../data/Main";
 function About() {
-  const {sectionFirst,sectionSecond , sectionFourth , sectionThird }= aboutData
+  const { sectionFirst, sectionSecond, sectionFourth, sectionThird } =
+    aboutData;
   return (
     <>
       <Navbar />
@@ -11,72 +11,100 @@ function About() {
         <img
           src={sectionFirst.img}
           alt="A cat"
-          className="w-screen h-full object-cover"
+          className="w-screen h-full object-cover bg-fixed bg-cover bg-center"
         />
-        <div className="absolute inset-0 flex align-center flex-col  text-white bg-black bg-opacity-50">
-           <div className="top-1/4 md:top-1/3 absolute px-6 md:px-11">
-           <h1 className="text-2xl md-3 md:mb-6 font-semibold">
+        <div className="absolute inset-0 flex align-center flex-col  text-white bg-black bg-opacity-70">
+          <div className="top-1/4 mt-16 md:mt-0 md:top-1/3 absolute px-6 md:px-11">
+            <h1 className="text-2xl sm:text-8xl font-black md-3 md:mb-4 md:mt-20">
               {sectionFirst.title}
             </h1>
-          <h2 className="text-xl sm:text-2xl md:text-6xl font-bold ">
-           {sectionFirst.hading}
-          </h2>
-           </div>
+            <h2 className="text-xl sm:text-xl md:text-2xl font-bold">
+              {sectionFirst.hading}
+            </h2>
+          </div>
         </div>
       </div>
       {/* 2 */}
 
-      <div className="w-full color relative">
-      <div className="text-white px-4 sm:px-6 md:px-12">
-          <h2 className=" md:text-6xl font-bold pt-20 ">
-            { sectionSecond.hading.split(',')[0]}
-            <br />
-            { sectionSecond.hading.split(',')[1]}
-          </h2>
-          <p className=" md:font-bold text-[14px] leading-3 md:text-[22px] md:leading-8 p-3 md:w-[60%] absolute w-[80%] right-0 md:left-1/3">
-            {sectionSecond.title}
-          </p>
+      <div className="w-full h-auto lg:h-[80vh] md:py-8">
+        <div className="w-full h-full md:flex md:justify-center md:items-center">
+          <div className="w-full sm:w-[40%] h-full flex justify-center items-center">
+            <div className="w-full overflow-hidden">
+              <img
+                src={sectionSecond.img}
+                className="w-full duration-700 shadow-md cursor-pointer hover:scale-105"
+                alt="#"
+              />
+            </div>
+          </div>
+          <div className="w-full text-center p-4 sm:w-[60%] h-full flex justify-center items-center flex-col sm:p-20 gap-8 sm:text-left border-2 border-black">
+            <h1 className="font-bold text-2xl sm:text-4xl">
+              {sectionSecond.hading}
+            </h1>
+            <p className="text-sm sm:text-base">{sectionSecond.title}</p>
+          </div>
         </div>
-        <img
-          src={sectionSecond.img}
-          alt="A cat"
-          className="h-auto"
-        />
       </div>
-    
+
       {/* 3 */}
-      <div className="flex flex-col items-center justify-center min-h-screen p-4">
-                    <h1 className=" text-3xl md:text-6xl font-bold text-center my-16">{sectionThird.title}</h1>
-                    <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-                        <img src={sectionThird.imgFirst} alt="A scenic view of a highway surrounded by greenery and hills" className="rounded-lg shadow-lg w-full md:w-1/2" />
-                        <div>
-                        <img src={sectionThird.imgSecond} alt="A modern highway with multiple lanes and buildings in the background" className="rounded-lg shadow-lg w-full" />
-                       <p className="text-lg text-gray-700 mt-8 text-center md:text-left max-w-2xl">
-                        {sectionThird.hading}
-                       </p>
-                        </div>
-                    </div>
+      <div className="w-full h-auto sm:h-[70vh] bg-gray-200 border-2 border-black">
+        <div className="w-full h-[20%] flex justify-center items-center">
+          <h1 className="text-3xl mt-8 sm:mt-0 sm:text-6xl font-bold">
+            Our Employee
+          </h1>
+        </div>
+        <div className="w-full h-[80%] p-8 flex justify-center flex-wrap items-center gap-8">
+          {/* card */}
+          {sectionThird?.map((item) => {
+            return (
+              <div className="relative grid w-64 h-80 flex-col items-end justify-center overflow-hidden rounded-lg cursor-pointer hover:border-2 hover:border-cyan-500">
+                <div
+                  style={{
+                    backgroundImage: `url(${item.img})`,
+                  }}
+                  className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-center"
+                >
+                  <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
                 </div>
+                <div className="relative text-center p-6 px-6 py-14 md:px-12">
+                  <h2 className="mb-4 text-sm font-medium text-white line-clamp-3">
+                    {item.desc}
+                  </h2>
+                  <h5 className="mb-4 text-xl font-semibold text-slate-300">
+                    {item.title}
+                  </h5>
+                  <img
+                    alt="Lewis Daniel"
+                    src={item.img}
+                    className="relative inline-block h-24 w-24 rounded-full border border-white"
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
       {/* 4 */}
 
-      <div className="relative w-full h-[400px] sm:h-[300px] md:h-[500px]">
-        <img
-          src={sectionFourth.img}
-          alt="A cat"
-          className="w-full h-full object-cover"
-        />
-
-        <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-12 sm:mt-16 md:mt-12 ml-4 sm:ml-8 md:ml-1">
-            <h1 className="text-3xl sm:text-5xl my-3 font-semibold">
+      <div className="w-full h-auto sm:h-[50vh] mt-4 py-4 bg-center bg-cover bg-fixed">
+        <div
+          // style={{
+          //   backgroundImage: `url(${sectionFourth.img})`,
+          // }}
+          className="w-full h-full overflow-hidden relative justify-center items-center text-white"
+        >
+          <img src={sectionFourth.img} alt="" />
+          <div className="w-full h-full bg-black absolute opacity-40 top-0 left-0"></div>
+          <div className="w-full sm:w-2/3 text-white flex flex-col text-center gap-4 absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <h1 className=" font-extrabold text-xl sm:text-5xl">
               {sectionFourth.title}
             </h1>
-           {sectionFourth.hading}
-          </h2>
+            <p className="line-clamp-3 text-xs sm:text-base sm:line-clamp-none">
+              {sectionFourth.hading}
+            </p>
+          </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }

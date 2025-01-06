@@ -1,11 +1,14 @@
+import React from "react";
 import Boardofdriction from "./utils/Boardofdriction";
 import Footer from "./utils/Footer";
 import Navbar from "./utils/Navbar";
+import { Link } from "react-router-dom";
 import OurClients from "./utils/Our-clients";
 import Project from "./utils/Project";
 import { mainSection, overResult } from "./data/Main";
 import TypewriterEffect from "./utils/TypeWriterEffect";
 import Carousel from "./utils/Carousel";
+import CountUp from "react-countup";
 function App() {
   return (
     <>
@@ -19,7 +22,7 @@ function App() {
             <TypewriterEffect text={mainSection.paragraph} />
           </p>
           <button className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white py-2 px-6 rounded-md md:w-1/3 text-lg">
-            {mainSection.btnText}
+            <Link to="/about">{mainSection.btnText}</Link>
           </button>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0 md:p-8">
@@ -47,7 +50,7 @@ function App() {
           {overResult.MainHading}
         </h1>
         <section className="flex flex-col md:flex-row md:space-x-4 sm:p-10 p-4 ">
-          <div className="relative w-full md:w-1/2">
+          {/* <div className="relative w-full md:w-1/2">
             <img
               src={overResult.image}
               alt="Project Overview"
@@ -57,20 +60,29 @@ function App() {
               <h2 className="text-2xl font-bold">{overResult.hading}</h2>
               <p className="text-xl">{overResult.val}</p>
             </div>
-          </div>
-          <div className="grid justify-center grid-cols-1 md:grid-cols-2 gap-4 mt-4 md:mt-0 md:w-[50%]">
+          </div> */}
+
+          <div className="grid justify-center grid-cols-1 md:grid-cols-4 gap-4 mt-4 md:mt-0 md:w-[100%]">
             {overResult.statsData.map((stat, index) => (
               <div
                 key={index}
-                className="bg-white flex justify-left pl-8 py-5 md:py-0 border-red-900  w-full align-center rounded-lg shadow-md border-2 hover:bg-gray-200 cursor-pointer  "
+                className="bg-gray-100 flex justify-between items-center px-4 py-12 border-2 border-gray-700 rounded-md"
               >
-                <div className="flex items-left gap-2 md:mt-10 h-fit flex-col">
-                  <span className="text-2xl mr-2">{stat.icon}</span>
-                  <span className="text-3xl font-black text-gray-500">
-                    {stat.value}
-                  </span>
+                <div className="flex justify-center items-center flex-col">
+                  <span className="text-3xl text-cyan-500">{stat.icon}</span>
                   <span className="font-semibold text-xl text-gray-500 ">
                     {stat.title}
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    <CountUp
+                      className="text-2xl font-black text-cyan-500"
+                      start={0}
+                      end={stat.value}
+                      duration={10}
+                    />
+                    <span className="text-2xl font-black text-cyan-500">+</span>
                   </span>
                 </div>
               </div>
@@ -78,9 +90,6 @@ function App() {
           </div>
         </section>
       </div>
-      <section className=" mt-5 overflow-hidden">
-        <img src="/images/full-img.jpg" />
-      </section>
       <OurClients />
       <Project />
       <Boardofdriction />

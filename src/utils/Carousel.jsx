@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = ["/images/img12.png", "/images/img9.png", "/images/img12.png"];
+  const images = [
+    "/images/highway1.jpg",
+    "/images/highway2.jpg",
+    "/images/highway3.jpg",
+  ];
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -18,18 +22,28 @@ const Carousel = () => {
     setCurrentIndex(index);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Auto-slide interval (3 seconds)
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [currentIndex]);
+
   return (
-    <div className="relative w-full mx-auto overflow-hidden md:h-[80vh] rounded-3xl">
+    <div className="relative w-full mx-auto overflow-hidden md:h-[80vh] md:rounded-3xl">
       <div
-        className="flex transition-transform duration-500 ease-in-out"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        className="flex ease-in-out"
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`,
+          transition: "transform .8s", // Set transition duration to 1 second
+        }}
       >
         {images.map((image, index) => (
           <div key={index} className="min-w-full overflow-hidden">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full"
+              className="w-full h-full bg-cover bg-no-repeat bg-fixed"
             />
           </div>
         ))}

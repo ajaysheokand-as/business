@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { projects, projectsDetails } from "../data/Main";
+import { Link } from "react-router-dom";
 function Project() {
   const [showButton, setShowButton] = useState(false);
   const handleScroll = () => {
@@ -29,7 +30,7 @@ function Project() {
         <h1 className="text-4xl sm:text-6xl font-bold mt-8 tracking-wider">
           PROJECTS
         </h1>
-        <h3 className="w-full sm:w-[35%] text-sm sm:text-xl text-gray-400 mx-auto mt-6 sm:mt-12">
+        <h3 className="w-full sm:w-[35%] text-sm sm:text-xl text-gray-400 mx-auto mt-6 sm:mt-10 sm:line-clamp-2">
           {projectsDetails.paragraph}
         </h3>
 
@@ -38,7 +39,7 @@ function Project() {
             {projectsDetails.moreProject}
           </h3>
           <button className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white px-4 py-2 rounded-lg">
-            {projectsDetails.btn}
+            <Link to="/project">{projectsDetails.btn}</Link>
           </button>
         </div>
       </div>
@@ -118,29 +119,33 @@ function Project() {
       {/* 3 */}
 
       <div className=" ml-10 mr-10 mt-5 flex flex-col sm:flex-row sm:justify-between gap-6">
-        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500">
-          <img
-            src={projects.thirdOne.image}
-            alt="Project 1"
-            className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-          />
-          <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold px-4">
-              {projects.thirdOne.text}
-            </h2>
-          </div>
+        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500 cursor-pointer">
+          <Link to="/project-details">
+            <img
+              src={projects.thirdOne.image}
+              alt="Project 1"
+              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+            />
+            <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold px-4">
+                {projects.thirdOne.text}
+              </h2>
+            </div>
+          </Link>
         </div>
-        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500">
-          <img
-            src={projects.thirdTwo.image}
-            alt="Project 2"
-            className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-          />
-          <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold px-4">
-              {projects.thirdTwo.text}
-            </h2>
-          </div>
+        <div className="relative w-full sm:w-[48%] h-[200px] sm:h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500 cursor-pointer">
+          <Link to="/project-details">
+            <img
+              src={projects.thirdTwo.image}
+              alt="Project 2"
+              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+            />
+            <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold px-4">
+                {projects.thirdTwo.text}
+              </h2>
+            </div>
+          </Link>
         </div>
       </div>
       {/* 4 */}
@@ -159,17 +164,19 @@ function Project() {
           </div>
         </div> */}
 
-        <div className="relative w-full sm:w-[55%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500">
-          <img
-            src={projects.fourthTwo.image}
-            alt="Project 2"
-            className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-          />
-          <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
-            <h2 className="text-xl sm:text-2xl font-bold px-4">
-              {projects.fourthTwo.text}
-            </h2>
-          </div>
+        <div className="relative w-full sm:w-[55%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(0,0,0,0.6)] transition-all duration-500 cursor-pointer">
+          <Link to="/project-details">
+            <img
+              src={projects.fourthTwo.image}
+              alt="Project 2"
+              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+            />
+            <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-500 rounded-lg">
+              <h2 className="text-xl sm:text-2xl font-bold px-4">
+                {projects.fourthTwo.text}
+              </h2>
+            </div>
+          </Link>
         </div>
 
         {/* <div className="relative w-full sm:w-[20%] h-[400px] group overflow-hidden rounded-lg hover:shadow-[0_0_20px_4px_rgba(255,0,0,0.6)] transition-all duration-500">

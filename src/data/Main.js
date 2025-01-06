@@ -1,3 +1,8 @@
+import { GiTakeMyMoney } from "react-icons/gi";
+import { GiRoad } from "react-icons/gi";
+import { MdOutlineEngineering } from "react-icons/md";
+import { MdFireTruck } from "react-icons/md";
+
 export const navbar = {
   logo: "/images/file (2).png",
   // text: "GAWAR",
@@ -13,7 +18,7 @@ export const navbar = {
 // main section
 
 export const mainSection = {
-  hading: "Shaping the Future with Tomorrow's Infrastructure",
+  hading: "Welcome to KMR Building Dreams, Crafting Futures",
   paragraph:
     "A leading force in the development of expressways, bridges, and tunnels across India.",
   image: "images/main1.jpg",
@@ -26,30 +31,39 @@ export const overResult = {
   hading: "HAM Projects",
   val: "25+",
   statsData: [
-    { title: "Order book", value: "16,000+ Cr", icon: "💰" },
-    { title: "Lane kms in India", value: "12,000+ Km", icon: "🛣️" },
-    { title: "Employee family", value: "2,000+", icon: "👨‍👩‍👧‍👦" },
-    { title: "Fleet size", value: "2,000+", icon: "🚚" },
+    { title: "Order book", value: 16000, icon: <GiTakeMyMoney /> },
+    { title: "Lane Km", value: 12000, icon: <GiRoad /> },
+    { title: "Employee's", value: 2000, icon: <MdOutlineEngineering /> },
+    { title: "Fleet size", value: 2000, icon: <MdFireTruck /> },
   ],
 };
 
 /* clients component data*/
 export const clients = [
-  { image: "images/Frame-1.png" },
-  { image: "images/Frame-3.png" },
-  { image: "images/Frame-4.png" },
-  { image: "images/Frame-5.png" },
-  { image: "images/Frame-6.png" },
-  { image: "images/Frame-7.png" },
+  { image: "images/logo1.jpg" },
+  { image: "images/logo2.jpg" },
+  { image: "images/logo3.jpg" },
+  { image: "images/logo4.jpg" },
 ];
 
 // project component Data
 export const projectsDetails = {
-  paragraph: `Explore our portfolio showcasing the successful execution of projects
-          that have left a lasting impact on communities and infrastructure
-          development.`,
+  paragraph: `Roadway Planning or Modifications: Are you designing or modifying an interchange or similar infrastructure?`,
   moreProject: "See more projects coming to the portfolio",
   btn: "Pipeline",
+  title: "Modern Office Building",
+  location: "Hisar Haryana India",
+  client: "Real Estate ltd.",
+  completionDate: "January 2025",
+  image: "/images/aboutLast1.jpg",
+  description: `Are you integrating housing, commercial areas, or recreational spaces?
+Feasibility Study: Is this for traffic flow optimization or land use assessment?`,
+  features: [
+    "Upgrading roads or bridges for modern traffic demands.",
+    "Smart Building Technology",
+    "Sustainable Materials Used",
+    "Over 100,000 sq ft of Space",
+  ],
 };
 export const projects = {
   firstOne: {
@@ -151,31 +165,42 @@ export const ContactUsData = {
 
 export const aboutData = {
   sectionFirst: {
-    img: "images/imgg.jpg",
-    title: "About Us",
-    hading: "Shaping the Future: Leaders in Infrastructure Development",
+    img: "images/about1.jpg",
+    title: "ABOUT US",
+    hading: "Reliable Construction Solutions for Every Need",
   },
   sectionSecond: {
-    img: "images/img2.png",
-    hading: "Embarking on, a Journey",
+    img: "images/about2.jpg",
+    hading: "A Legacy of Excellence",
     title: `Kmr Buildcon Private Limited is a Private company incorporated on 18 January 2022. It is classified as Non-government company and is registered at Registrar of Companies, Delhi. Its authorized share capital is Rs. 10,000,000 and its paid up capital is Rs. 900,670.`,
   },
-  sectionThird: {
-    imgFirst: "images/img3.png",
-    imgSecond: "images/img4.png",
-    title: "Acknowledged Distinction",
-    hading:
-      "It's NIC code is 453 (which is part of its CIN). As per the NIC code, it is inolved in Building installation [ These activities are usually performed at the site of construction, although parts of the job may be carried out in a special shop. Repair of installations are also included in the corresponding sub-classes.].",
-  },
+  sectionThird: [
+    {
+      img: "/images/employee1.jpg",
+      title: "Marco Jansen",
+      desc: "Structural modeling and analysis.",
+    },
+    {
+      img: "/images/employee2.jpg",
+      title: "Hanaya Maries",
+      desc: "Project scheduling (e.g., Gantt charts).",
+    },
+    {
+      img: "/images/employee3.jpg",
+      title: "Jashan Deep",
+      desc: "BIM (Building Information Modeling) integration.",
+    },
+    {
+      img: "/images/employee4.jpg",
+      title: "Michel Wann",
+      desc: "Cost estimation and budget tracking.",
+    },
+  ],
   sectionFourth: {
-    img: "images/img5.webp",
-    title: "Pioneering Excellence",
-    hading: `
-            KMR Construction is renowned for its commitment to steadfast
-            project execution, evident in 4 projects receiving early completion
-            bonus over the past five years, and a strong order book reflects the
-            trust
-            our clients place in us.`,
+    img: "images/aboutLast1.jpg",
+    title: "About KMR Construction",
+    hading:
+      "KMR Construction is a trusted name in the construction industry, known for delivering excellence in every project. With years of experience and a commitment to innovation, KMR Construction specializes in providing high-quality residential, commercial, and industrial construction services.",
   },
 };
 
@@ -183,7 +208,7 @@ export const footerData = {
   company: "KMR Corp.",
   subscribe: "Subscribe To Our Newsletter :",
   paragraph: "Improving people's futures through building infrastructure",
-  footer: "KMR | Copyright @ 2022 | All Rights reserved",
+  footer: "KMR | Copyright © 2025 | All Rights reserved",
   icon: [
     "fas fa-globe",
     "fab fa-linkedin",

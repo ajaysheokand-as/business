@@ -7,6 +7,7 @@ import About from "./utils/About.jsx";
 import BoardOfDirectors from "./utils/BoardOfDrictionSection.jsx";
 import ProjectSection from "./utils/ProjectSection.jsx";
 import ContactUs from "./utils/ContactUs.jsx";
+import ProjectDetailPage from "./utils/ProjectDetailPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,22 +15,25 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path : '/about',
-    element : <About/>
+    path: "/about",
+    element: <About />,
   },
   {
-    path : '/project',
-    element : <ProjectSection/>  
+    path: "/project",
+    element: <ProjectSection />,
   },
   {
-    path : "/BoardOfDirectors",
-    element :<BoardOfDirectors/>
+    path: "/BoardOfDirectors",
+    element: <BoardOfDirectors />,
   },
   {
-    path : '/contactUs',
-    element : <ContactUs/>
+    path: "/contactUs",
+    element: <ContactUs />,
   },
- 
+  {
+    path: "/project-details",
+    element: <ProjectDetailPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
