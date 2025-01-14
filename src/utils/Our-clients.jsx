@@ -13,7 +13,7 @@ export default function OurClients() {
               <div className="w-64 h-full text-white">
                 <img
                   src={item.image}
-                  className="w-full h-56 rounded-sm shadow-lg shadow-cyan-500 hover:shadow-black cursor-pointer"
+                  className="w-full h-56 bg-white rounded-sm shadow-lg shadow-cyan-500 hover:shadow-black cursor-pointer"
                   alt="#"
                 />
               </div>
@@ -38,11 +38,9 @@ export default function OurClients() {
           {clients?.map((item) => {
             return (
               <div className="w-64 h-full text-white flex justify-center items-center">
-                <img
-                  src={item.image}
-                  className="w-full h-2/3 rounded-sm shadow-lg shadow-black hover:shadow-cyan-500 cursor-pointer"
-                  alt="#"
-                />
+                <div className="w-full h-2/3 bg-white overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-cyan-500 cursor-pointer flex justify-center items-center">
+                  <img src={item.image} className="w-40" alt="#" />
+                </div>
               </div>
             );
           })}

@@ -4,7 +4,7 @@ import { MdOutlineEngineering } from "react-icons/md";
 import { MdFireTruck } from "react-icons/md";
 
 export const navbar = {
-  logo: "/images/file (2).png",
+  logo: "/logo/mainLogo.png",
   // text: "GAWAR",
   // smText: "Construction Limited",
   navLink: [
@@ -18,7 +18,7 @@ export const navbar = {
 // main section
 
 export const mainSection = {
-  hading: "Welcome to KMR Building Dreams, Crafting Futures",
+  hading: "Welcome to Design Line Dreams, Crafting Futures",
   paragraph:
     "A leading force in the development of expressways, bridges, and tunnels across India.",
   image: "images/main1.jpg",
@@ -40,10 +40,10 @@ export const overResult = {
 
 /* clients component data*/
 export const clients = [
-  { image: "images/logo1.jpg" },
-  { image: "images/logo2.jpg" },
-  { image: "images/logo3.jpg" },
-  { image: "images/logo4.jpg" },
+  { image: "project-photos/clients/clientOne.png" },
+  { image: "project-photos/clients/clientTwo.png" },
+  { image: "project-photos/clients/clientThree.png" },
+  { image: "project-photos/clients/clientFour.png" },
 ];
 
 // project component Data
@@ -55,7 +55,7 @@ export const projectsDetails = {
   location: "Hisar Haryana India",
   client: "Real Estate ltd.",
   completionDate: "January 2025",
-  image: "/images/aboutLast1.jpg",
+  image: "/images/aboutLast1-min.jpg",
   description: `Are you integrating housing, commercial areas, or recreational spaces?
 Feasibility Study: Is this for traffic flow optimization or land use assessment?`,
   features: [
@@ -68,51 +68,64 @@ Feasibility Study: Is this for traffic flow optimization or land use assessment?
 export const projects = {
   firstOne: {
     image: "/images/img6.webp",
-    text: "Dulte - Kwalkulh Road (International Corridor) of NH-6",
+    text: "SDE , Prov. Sub Div. No. 4, PWD B&R Sonipat",
   },
   firstTwo: {
     image: "/images/img7.png",
-    text: "Bikaner Suratgarh National Highway-15",
+    text: "SDE, Prov. Sub Div. No. 5 , Karnal",
   },
   SecondOne: {
     image: "/images/img10.avif",
-    text: "Four lane Badarpur Bypass National Highway-6",
+    text: "Ex. Eng. Prov. Div.  PWD B&R Ch. Dadri",
   },
   SecondTwo: {
     image: "/images/img9.png",
-    text: "Gawar Kiratpur Nerchowk Highway Pvt Ltd",
+    text: "sde, Provi. Sub. Divi.no II ,PWD B&R Br. Beri",
   },
   SecondThree: {
     image: "/images/img8.png",
-    text: "Dewas Ujjain Highway Pvt Ltd",
+    text: "SDE. Prov. Div. PWD B&R Mahendragarh",
   },
   thirdOne: {
     image: "/images/img11.png",
-    text: "Bikaner Suratgarh National Highway-15",
+    text: "SDE. Prov. Div. PWD B&R Narnaul",
   },
   thirdTwo: {
     image: "/images/img12.png",
-    text: "Four lane Badarpur Bypass National Highway-6",
+    text: "Ex. En. Provi. Div. PWD B&R Fatehabad",
   },
   fourthOne: {
     image: "/images/img13.png",
-    text: " Hardiya Hasanpur Highway Pvt Ltd",
+    text: "SDE. Prov. Div. PWD B&R Mahendragarh",
   },
   fourthTwo: {
     image: "/images/img14.png",
-    text: "Dulte - Kwalkulh Road (International Corridor) of NH-6",
+    text: "SDE. Prov. Div. PWD B&R Assandh",
   },
   fourthThree: {
     image: "/images/img15.png",
-    text: "  Dewas Ujjain Highway Pvt Ltd",
+    text: "SDE, Provi, ub Div. no. 4, PWD B&R Branch , HISAR",
   },
 };
 
 export const BoardOfDirectors = [
   {
-    src: "images/CEO.jpg",
-    text: `Alexandra Alex Morgan  CEO & Founder`,
-    alt: "Alexandra Morgan is a visionary leader and the CEO of Morgan & Co. Construction. With over 20 years of experience in the industry, she founded the company with a commitment to transforming the way buildings are designed and built. Her keen eye for innovation, coupled with her deep understanding of structural integrity, has propelled the company into new markets. Under Alex’s leadership, Morgan & Co. has consistently delivered high-quality projects, from residential complexes to large-scale commercial properties. Her passion for sustainable construction practices and her dedication to community-building make her a respected figure in the industry.",
+    src: "/project-photos/DirectorOne.png",
+    text: `MANAGING DIRECTOR OF THE FIRM Mr. Ajay Kundu`,
+    alt: `Road Safety Certificate: Mualana Azad National Institute of Technology,
+Bhopal.
+Ajay kundu is registered as an Engineer in HSVP for the purpose of
+undertaking the work of designing of any private building in the urban
+estates of Haryana.
+He has professional experience in the field of Civil Engineering in the
+execution of major highway projects of international standards including
+various other infrastructure projects, Public Health Engineering, Building
+and Roads. Excellent experience in the planning and execution of
+earthwork in embankment and sub grade, granular sub-base, wet mix
+macadam and bituminous courses. Well conversant with IRC standards,
+FIDIC guide-lines, MORTH specifications and all technical specifications
+involved in the construction of highways & Structures and testing of
+materials in accordance with IRC/ MOST standards.`,
   },
   {
     src: "images/2nd.jpg",
@@ -138,23 +151,22 @@ export const ContactUsData = {
   address: [
     {
       text: "Email Us",
-      address: "kmrbuildcon40@gmail.com",
+      address: "info@dlcsgroup.in",
       icon: "fas fa-envelope",
     },
     {
       text: "Call Us",
-      address: "9813538000 , 8930829000",
+      address: "7015511801",
       icon: "fas fa-phone",
     },
     {
       text: "Registered office",
-      address:
-        "Shop no. 102, New Auto Market, Phase-3, Near Gate no. 3, Hisar-125001, Haryana",
+      address: `DSS71, Huda Market, Sector 15A, Hisar (125001)`,
       icon: "fas fa-map-marker-alt",
     },
     {
       text: "Corporate Identification Number",
-      address: "CIN - U45309HR2022PTC100609",
+      address: "www.dlcs.org.in",
       icon: "fa-solid fa-passport",
     },
   ],
@@ -165,50 +177,50 @@ export const ContactUsData = {
 
 export const aboutData = {
   sectionFirst: {
-    img: "images/about1.jpg",
+    img: "images/about1-min.jpg",
     title: "ABOUT US",
     hading: "Reliable Construction Solutions for Every Need",
   },
   sectionSecond: {
-    img: "images/about2.jpg",
+    img: "images/about2-min.jpg",
     hading: "A Legacy of Excellence",
-    title: `Kmr Buildcon Private Limited is a Private company incorporated on 18 January 2022. It is classified as Non-government company and is registered at Registrar of Companies, Delhi. Its authorized share capital is Rs. 10,000,000 and its paid up capital is Rs. 900,670.`,
+    title: `Design Line Private Limited is a Private company incorporated on 18 January 2022. It is classified as Non-government company and is registered at Registrar of Companies, Delhi. Its authorized share capital is Rs. 10,000,000 and its paid up capital is Rs. 900,670.`,
   },
   sectionThird: [
     {
-      img: "/images/employee1.jpg",
+      img: "/images/employee1-min.jpg",
       title: "Marco Jansen",
       desc: "Structural modeling and analysis.",
     },
     {
-      img: "/images/employee2.jpg",
+      img: "/images/employee2-min.jpg",
       title: "Hanaya Maries",
       desc: "Project scheduling (e.g., Gantt charts).",
     },
     {
-      img: "/images/employee3.jpg",
+      img: "/images/employee3-min.jpg",
       title: "Jashan Deep",
       desc: "BIM (Building Information Modeling) integration.",
     },
     {
-      img: "/images/employee4.jpg",
+      img: "/images/employee4-min.jpg",
       title: "Michel Wann",
       desc: "Cost estimation and budget tracking.",
     },
   ],
   sectionFourth: {
-    img: "images/aboutLast1.jpg",
-    title: "About KMR Construction",
+    img: "images/aboutLast1-min.jpg",
+    title: "About Design Line Construction",
     hading:
-      "KMR Construction is a trusted name in the construction industry, known for delivering excellence in every project. With years of experience and a commitment to innovation, KMR Construction specializes in providing high-quality residential, commercial, and industrial construction services.",
+      "Design Line Construction is a trusted name in the construction industry, known for delivering excellence in every project. With years of experience and a commitment to innovation, KMR Construction specializes in providing high-quality residential, commercial, and industrial construction services.",
   },
 };
 
 export const footerData = {
-  company: "KMR Corp.",
+  company: "Design Line",
   subscribe: "Subscribe To Our Newsletter :",
   paragraph: "Improving people's futures through building infrastructure",
-  footer: "KMR | Copyright © 2025 | All Rights reserved",
+  footer: "Design Line | Copyright © 2025 | All Rights reserved",
   icon: [
     "fas fa-globe",
     "fab fa-linkedin",

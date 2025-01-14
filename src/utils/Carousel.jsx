@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    "/images/highway1.jpg",
-    "/images/highway2.jpg",
-    "/images/highway3.jpg",
+    "/project-photos/One.jpg",
+    "/project-photos/Two.jpg",
+    "/project-photos/Three.jpg",
   ];
 
   const nextSlide = () => {

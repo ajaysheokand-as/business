@@ -95,7 +95,7 @@ function About() {
         >
           <img src={sectionFourth.img} alt="" />
           <div className="w-full h-full bg-black absolute opacity-40 top-0 left-0"></div>
-          <div className="w-full sm:w-2/3 text-white flex flex-col text-center gap-4 absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="w-full px-4 sm:w-2/3 text-white flex flex-col text-center gap-4 absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <h1 className=" font-extrabold text-xl sm:text-5xl">
               {sectionFourth.title}
             </h1>

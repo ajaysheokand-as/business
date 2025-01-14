@@ -196,7 +196,7 @@ function Project() {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-10 right-10 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white text-2xl p-4 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
+          className="fixed bottom-10 z-40 right-10 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white text-2xl p-4 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
         >
           ↑
         </button>
