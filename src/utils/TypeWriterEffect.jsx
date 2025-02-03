@@ -1,10 +1,11 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 const TypewriterEffect = ({text}) => {
+  console.log("text", text)
   return (
     <div >
       <Typewriter
-        words={[text]}
+        words={text}
         loop={0} // 0 means infinite loop
         cursor
         cursorStyle="|"

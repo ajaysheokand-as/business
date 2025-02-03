@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { aboutData } from "../data/Main";
+import Footer from "./Footer";
 function About() {
   const { sectionFirst, sectionSecond, sectionFourth, sectionThird } =
     aboutData;
@@ -105,6 +106,8 @@ function About() {
           </div>
         </div>
       </div>
+      <Footer />
+
     </>
   );
 }

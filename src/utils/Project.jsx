@@ -30,17 +30,17 @@ function Project() {
         <h1 className="text-4xl sm:text-6xl font-bold mt-8 tracking-wider">
           PROJECTS
         </h1>
-        <h3 className="w-full sm:w-[35%] text-sm sm:text-xl text-gray-400 mx-auto mt-6 sm:mt-10 sm:line-clamp-2">
+        <h3 className="w-full sm:w-[35%] text-sm sm:text-xl text-gray-400 mx-auto mt-6 sm:mt-10 ">
           {projectsDetails.paragraph}
         </h3>
 
         <div className="flex flex-col p-4 sm:flex-row gap-4 sm:gap-5 px-2 items-center justify-center rounded-lg bg-cyan-100 w-full sm:w-[36%] mx-auto mt-6 sm:mt-5">
-          <h3 className="pl-4 sm:pl-6 pt-1 line-clamp-1 text-lg sm:text-base font-semibold">
+          <h3 className=" pt-1 text-lg sm:text-base font-semibold">
             {projectsDetails.moreProject}
           </h3>
-          <button className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white px-4 py-2 rounded-lg">
+          {/* <button className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 text-white px-4 py-2 rounded-lg">
             <Link to="/project">{projectsDetails.btn}</Link>
-          </button>
+          </button> */}
         </div>
       </div>
 

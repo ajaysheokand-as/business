@@ -21,10 +21,10 @@ function Boardofdriction() {
               className="w-full h-full object-cover transition-all duration-500"
             />
             <div className="absolute w-full h-full bottom-0 left-0 right-0 p-4 bg-white bg-opacity-70 text-black transform translate-y-full group-hover:-translate-y-0 transition-all duration-500">
-              <p className="text-sm">{image.alt}</p>
+              <h4 className="text-sm text-center my-auto">{"Designation: " + image.alt}</h4>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-70 text-black text-center text-xl">
-              <h2 className="font-bold">{image.text}</h2>
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-70 text-black my-auto text-center text-xl">
+              <h2 className="text-center font-bold">{image.text}</h2>
               <h4>{image.subtext}</h4>
             </div>
           </div>

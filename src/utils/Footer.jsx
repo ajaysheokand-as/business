@@ -10,7 +10,7 @@ function Footer() {
           <i className="fas fa-shield-alt text-black"></i>
           <span className="text-black font-bold">{footerData.company}</span>
         </div>
-        <div className="flex justify-center items-center flex-wrap space-x-2">
+        {/* <div className="flex justify-center items-center flex-wrap space-x-2">
           <span className="text-black ml-2">{footerData.subscribe}</span>
           <div>
             <input
@@ -20,14 +20,14 @@ function Footer() {
             />
             <i className="fas fa-arrow-right text-black ml-4"></i>
           </div>
-        </div>
+        </div> */}
       </header>
-      <main className="flex flex-col text-center mt-4 md:text-left md:mt-16">
+      <main className="flex flex-col text-center mt-4 md:text-left">
         <h1 className="text-xl md:text-6xl font-bold leading-tight text-gray-900">
           {footerData.paragraph}
         </h1>
       </main>
-      <footer className="w-full mt-16">
+      <footer className="w-full mt-4">
         <div className="border-t border-gray-700 p-4 flex justify-between items-center flex-col">
           <nav className="w-full flex justify-center items-center gap-5 mb-4 md:justify-start">
             {navbar.navLink.map((nav) => (

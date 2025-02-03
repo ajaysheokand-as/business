@@ -1,14 +1,15 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { projectsDetails } from "../data/Main";
+import Footer from "./Footer";
 
 function ProjectDetailPage() {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-100 py-10">
+      <section className="bg-gray-100 py-10 my-24">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
             {projectsDetails.title}
           </h1>
           <p className="text-lg text-gray-600 mb-2">
@@ -49,6 +50,7 @@ function ProjectDetailPage() {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

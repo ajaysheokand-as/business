@@ -5,8 +5,6 @@ import { MdFireTruck } from "react-icons/md";
 
 export const navbar = {
   logo: "/images/file (2).png",
-  // text: "GAWAR",
-  // smText: "Construction Limited",
   navLink: [
     { text: "Home", path: "/" },
     { text: "About", path: "/about" },
@@ -19,8 +17,11 @@ export const navbar = {
 
 export const mainSection = {
   hading: "Welcome to KMR Building Dreams, Crafting Futures",
-  paragraph:
-    "A leading force in the development of expressways, bridges, and tunnels across India.",
+  paragraph: {
+    heading: "A leading force in the development of",
+    items: ["expressways.","bridges.","tunnels." ]
+  },
+    
   image: "images/main1.jpg",
   video: "/video/Sequence-01_1.mp4",
   btnText: "Know more",
@@ -87,11 +88,11 @@ export const projects = {
     text: "Dewas Ujjain Highway Pvt Ltd",
   },
   thirdOne: {
-    image: "/images/img11.png",
+    image: "/images/img21.jpeg",
     text: "Bikaner Suratgarh National Highway-15",
   },
   thirdTwo: {
-    image: "/images/img12.png",
+    image: "/images/img22.jpeg",
     text: "Four lane Badarpur Bypass National Highway-6",
   },
   fourthOne: {
@@ -99,7 +100,7 @@ export const projects = {
     text: " Hardiya Hasanpur Highway Pvt Ltd",
   },
   fourthTwo: {
-    image: "/images/img14.png",
+    image: "/images/img23.jpeg",
     text: "Dulte - Kwalkulh Road (International Corridor) of NH-6",
   },
   fourthThree: {
@@ -111,23 +112,33 @@ export const projects = {
 export const BoardOfDirectors = [
   {
     src: "images/CEO.jpg",
-    text: `Alexandra Alex Morgan  CEO & Founder`,
-    alt: "Alexandra Morgan is a visionary leader and the CEO of Morgan & Co. Construction. With over 20 years of experience in the industry, she founded the company with a commitment to transforming the way buildings are designed and built. Her keen eye for innovation, coupled with her deep understanding of structural integrity, has propelled the company into new markets. Under Alex’s leadership, Morgan & Co. has consistently delivered high-quality projects, from residential complexes to large-scale commercial properties. Her passion for sustainable construction practices and her dedication to community-building make her a respected figure in the industry.",
+    text: `SATBIR SINGH BOORA`,
+    alt: "DIRECTOR",
   },
   {
     src: "images/2nd.jpg",
-    text: `David Tran – Chief Operations Officer (COO)`,
-    alt: "David Tran is the Chief Operations Officer at Tran Construction Group and has been with the company for over 15 years. Known for his exceptional leadership skills and hands-on approach, David oversees the day-to-day operations of the company. He ensures that every project is executed on time, within budget, and up to the highest standards. David’s background in engineering and logistics has allowed him to implement cutting-edge technologies to streamline construction processes. His ability to manage large teams and multiple projects simultaneously has earned him a reputation as a strategic and effective leader.",
+    text: `RAJESH BENIWAL`,
+    alt: "DIRECTOR",
   },
   {
-    src: "images/3rd.jpg",
-    text: ` Sophie Lopez – Director of Project Development`,
-    alt: " Sophie Lopez is the Director of Project Development at Lopez Builders. With a background in architecture and urban planning, Sophie brings a creative and detail-oriented approach to every project. She specializes in large-scale residential developments and commercial spaces that combine functionality with aesthetic appeal. Sophie’s commitment to delivering projects that meet both client expectations and environmental standards has helped position Lopez Builders as a leader in sustainable construction practices. Her innovative mindset and hands-on experience have contributed to the company’s rapid growth and success in competitive markets.",
+    src: "images/CEO.jpg",
+    text: `MUKESH KUMAR`,
+    alt: "DIRECTOR",
   },
   {
     src: "images/4th.jpg",
-    text: `James "Jim" Carter – Chief Financial Officer (CFO)`,
-    alt: "James Carter is the Chief Financial Officer at Carter & Sons Construction, where he has been an integral part of the leadership team for over a decade. With a background in corporate finance and construction management, Jim ensures the financial health and sustainability of the company. He oversees budgeting, forecasting, and financial strategy to support the company’s growth and long-term goals. Jim’s ability to analyze market trends, manage risks, and optimize resource allocation has been crucial in maintaining profitability while expanding the company’s reach. His no-nonsense approach to financial planning and his ability to navigate the complexities of the construction industry make him a key player in the company's success.",
+    text: `ABHISHEK BOORA`,
+    alt: "DIRECTOR",
+  },
+  {
+    src: "images/2nd.jpg",
+    text: `BIR SINGH SIHAG`,
+    alt: "DIRECTOR",
+  },
+  {
+    src: "images/4th.jpg",
+    text: `SATINDER SINGH`,
+    alt: "DIRECTOR",
   },
 ];
 
@@ -143,7 +154,7 @@ export const ContactUsData = {
     },
     {
       text: "Call Us",
-      address: "9813538000 , 8930829000",
+      address: "9416038082",
       icon: "fas fa-phone",
     },
     {
@@ -205,7 +216,7 @@ export const aboutData = {
 };
 
 export const footerData = {
-  company: "KMR Corp.",
+  company: "KMR Buildcon Pvt. Ltd.",
   subscribe: "Subscribe To Our Newsletter :",
   paragraph: "Improving people's futures through building infrastructure",
   footer: "KMR | Copyright © 2025 | All Rights reserved",
